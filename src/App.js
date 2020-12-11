@@ -13,7 +13,7 @@ const Main = styled.div`
 `;
 
 const Background = styled.div`
-  background-image: url("./assets/backgroundgreen.png");
+  background-image: url("./assets/gradient_bg.png");
   position: absolute;
   top: 0;
   bottom: 0;
@@ -30,7 +30,6 @@ function App() {
   return (
     <Router>
       <Main>
-        <Background></Background>
         <Header></Header>
         <Switch>
           <Route exact path="/">
