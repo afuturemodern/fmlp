@@ -12,15 +12,15 @@ const Main = styled.div`
   color: white;
 `;
 
-const Background = styled.div`
-  background-image: url("./assets/gradient_bg.png");
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1000;
-`;
+// const Background = styled.div`
+//   background-image: url("./assets/gradient_bg.png");
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   z-index: -1000;
+// `;
 
 const Content = styled.div`
   display: flex;
