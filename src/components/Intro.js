@@ -5,6 +5,7 @@ const Container = styled.div`
   flex-direction: column;
   padding: 3rem;
   font-size: 1.5rem;
+  font-weight: bold;
 `;
 
 const Intro = () => {

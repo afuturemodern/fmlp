@@ -4,8 +4,8 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 3rem;
-  line-height: 1.3rem;
-  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-size: 1.3rem;
 `;
 
 const Heading = styled.h2`
@@ -48,44 +48,37 @@ const Mission = () => {
         and the los angeles department of water and power.
       </p>
       <Heading>core pillars</Heading>
-      {/* <p>our process loops through the following operations:</p>
-      <p>
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </p> */}
       <p>
         our process loops through the following operations:
         <br />
         <br />
-        • move revolutionary leaders to revolutionary spaces. migrate our
-        members off corporate-run platforms, and onto distributed, democratized
-        networks. these offer the benefits of fairer pay to creators, censorship
-        resistance, and sophisticated funding, monetization and ownership
-        capabilities. For example, our musical artists distribute their catalogs
-        through decentralized, artist-owned streaming services like Resonate and
-        Audius.
+        <strong>
+          • move revolutionary leaders to revolutionary spaces.
+        </strong>{" "}
+        migrate our members off corporate-run platforms, and onto distributed,
+        democratized networks. these offer the benefits of fairer pay to
+        creators, censorship resistance, and sophisticated funding, monetization
+        and ownership capabilities. For example, our musical artists distribute
+        their catalogs through decentralized, artist-owned streaming services
+        like Resonate and Audius.
         <br />
         <br />
-        • bring our communities with us on our journey. invest in research,
-        education, and direct action which brings these alternative structures
-        to as many people as possible. this looks like live demos, TED-style
-        lecture / story series / podcasts, workshops, livestreaming events, and
-        more.
+        <strong>• bring our communities with us on our journey.</strong> invest
+        in research, education, and direct action which brings these alternative
+        structures to as many people as possible. this looks like live demos,
+        TED-style lecture / story series / podcasts, workshops, livestreaming
+        events, and more.
         <br />
-        <br />• bridge the old and new worlds. develop programs to develop these
-        spaces, bringing more contributors and communities to join them, driving
-        a virtuous cycle of adoption. as these projects are largely community
-        developed and often welcome contributions from outside their core
-        developers, our technologists can lead the charge to bring the
-        developments our communities need: when systems lack specific functions
-        creators need, we will provide technical and product contributions
-        toward making those functions available; when the systems don't exist at
-        all, we will build our own.
+        <br />
+        <strong>• bridge the old and new worlds.</strong> develop programs to
+        develop these spaces, bringing more contributors and communities to join
+        them, driving a virtuous cycle of adoption. as these projects are
+        largely community developed and often welcome contributions from outside
+        their core developers, our technologists can lead the charge to bring
+        the developments our communities need: when systems lack specific
+        functions creators need, we will provide technical and product
+        contributions toward making those functions available; when the systems
+        don't exist at all, we will build our own.
       </p>
     </Container>
   );

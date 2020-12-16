@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Art from "./components/Art";
+import Art from "./components/Art/Art.js";
 import Header from "./components/Header";
 import Mission from "./components/Mission";
 import Members from "./components/Members";
