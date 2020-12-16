@@ -3,7 +3,7 @@ import kodi from "./kodi.gif";
 import styled from "styled-components";
 
 const GifContainer = styled.div`
-  width: 30%;
+  width: 148px;
   top: 84%;
   left: 18%;
   position: absolute;
@@ -13,7 +13,7 @@ const GifContainer = styled.div`
 const KodiGif = styled.img`
   width: 61%;
   position: absolute;
-  top: 18%;
+  top: 32px;
   transform: translate(31%);
 `;
 

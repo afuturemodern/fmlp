@@ -34,8 +34,9 @@ const Aliza = styled.img`
 
 const ArtContainer = styled.div`
   position: relative;
-  width: 1072px;
+  width: 50%;
   margin: 2rem;
+  height: 430px;
 `;
 
 const Art = () => {
