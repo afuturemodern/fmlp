@@ -1,48 +1,32 @@
 import styled from "styled-components";
-import Art from "./components/Art/Art.js";
-import Header from "./components/Header";
-import Mission from "./components/Mission";
-import Members from "./components/Members";
-
-import Intro from "./components/Intro";
-
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-const Main = styled.div`
-  color: white;
-`;
+import Header from "./components/Header/Header.js";
 
-// const Background = styled.div`
-//   background-image: url("./assets/gradient_bg.png");
-//   position: absolute;
-//   top: 0;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   z-index: -1000;
-// `;
+import HomePage from "./pages/HomePage.js";
+import MissionPage from "./pages/MissionPage.js";
+import MembersPage from "./pages/MembersPage.js";
+import ProjectsPage from "./pages/ProjectsPage.js";
 
-const Content = styled.div`
-  display: flex;
-`;
+const Main = styled.main``;
 
 function App() {
   return (
     <Router>
+      <Header></Header>
       <Main>
-        <Header></Header>
         <Switch>
           <Route exact path="/">
-            <Content>
-              <Intro></Intro>
-              <Art />
-            </Content>
+            <HomePage />
           </Route>
-          <Route path="/mission">
-            <Mission></Mission>
+          <Route exact path="/mission">
+            <MissionPage />
           </Route>
-          <Route path="/members">
-            <Members></Members>
+          <Route exact path="/members">
+            <MembersPage />
+          </Route>
+          <Route exact path="/projects">
+            <ProjectsPage />
           </Route>
         </Switch>
       </Main>
