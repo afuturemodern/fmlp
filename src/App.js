@@ -15,7 +15,7 @@ const Main = styled.main`
 
 function App() {
   return (
-    <Router style='flex-grow: 1;'>
+    <Router>
       <Header />
       <Main>
         <Switch>
