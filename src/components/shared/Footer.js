@@ -16,7 +16,7 @@ function SocialIconWrapper (props) {
   return <SocialIcon className="social-icon" fgColor="white" {...props} />;
 }
 
-// TODO: Add in correct links
+// TODO: Add in correct links (use a json file with an array so it's easy to update/add/remove/reorder links)
 
 function Footer() {
   return (
