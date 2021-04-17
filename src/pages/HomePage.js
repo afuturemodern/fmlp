@@ -12,8 +12,8 @@ const HomePage = () => {
   return (
     <HomePageContainer>
       <Intro />
-      <Divider />
       <HomeCards />
+      <Divider />
     </HomePageContainer>
   );
 };

@@ -4,9 +4,11 @@ import HomeCard from "./Card.js";
 
 const Container = styled.div`
   display: grid;
+  // width: 80vw;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: var(--space-medium);
-  margin: 0 var(--space-medium);
+  // margin: 0 var(--space-medium);
+  margin: 10px auto;
 `;
 
 const HomeCards = () => {
