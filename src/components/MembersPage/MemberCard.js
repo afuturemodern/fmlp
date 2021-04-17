@@ -1,11 +1,15 @@
 import styled from "styled-components";
+import { SocialIcon } from 'react-social-icons';
 
-const Container = styled.div`
-  border: var(--space-medium) solid white;
+const CardContainer = styled.div`
+  height: 100%;
+  width: 100%;
+  border: var(--space-medium) solid ${props => (props.backgroundColor)};
   border-radius: var(--space-medium);
-  background-color: white;
-  box-shadow: 2px 3px 10px 1px #ddd;
+  box-shadow: 2px 3px 10px 1pƒx #ddd;
   margin-bottom: var(--space-large);
+
+  background-color: ${props => (props.backgroundColor)};
 `;
 
 const ProfilePic = styled.img`
@@ -18,7 +22,6 @@ const ProfilePic = styled.img`
 
 const TextContainer = styled.div`
   padding: var(--space-small);
-  background-color: #3e54b2;
   border-bottom-left-radius: var(--space-small);
   border-bottom-right-radius: var(--space-small);
   p {
@@ -26,15 +29,31 @@ const TextContainer = styled.div`
   }
 `;
 
+const SocialIconContainer = styled.div`
+  padding: var(--space-small) 0;
+  margin: 0 -10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+`;
+
+function SocialIconWrapper (props) {
+  return <SocialIcon bgColor="transparent" fgColor="white" {...props} />;
+}
+
 const MemberCard = ({ member }) => {
   return (
-    <Container>
+    <CardContainer backgroundColor={member.cardColor} >
       <ProfilePic src={member.img} />
+      <SocialIconContainer>
+        {member.socials.map((socialURL, i) => {
+          return <SocialIconWrapper url={socialURL} key={i} />
+        })}
+      </SocialIconContainer>
       <TextContainer>
         <p>{member.name}</p>
         <p>{member.title}</p>
       </TextContainer>
-    </Container>
+    </CardContainer>
   );
 };
 
