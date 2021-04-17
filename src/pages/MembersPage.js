@@ -3,23 +3,22 @@ import MemberCard from "../components/MembersPage/MemberCard.js";
 
 import members from "../components/MembersPage/members/members.js";
 
-const MembersPageContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
+const MembersPageContainer = styled.div``;
 
 const ListContainer = styled.div`
-  display: flex;
-  margin: var(--space-medium);
-  gap: var(--space-medium);
+display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(276px, 1fr));
+  margin: var(--space-large);
+  grid-gap: var(--space-large);
 `;
 
 const MembersPage = () => {
   return (
     <MembersPageContainer>
       <ListContainer>
-        {members.map((m) => {
-          return <MemberCard member={m} />;
+        {members.map((m, i) => {
+          return <MemberCard member={m} key={i} />;
         })}
       </ListContainer>
     </MembersPageContainer>
