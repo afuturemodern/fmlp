@@ -5,9 +5,13 @@ import IntroText from "../Intro/IntroText";
 import Divider from "../../Divider/Divider";
 
 /**
- * 
- * @param {} param0 
- * @returns a paragraph text and a divider 
+ * ImageTextDivider
+ * @description generaes a paragraph or two, an array of images and a divider component
+ * @param {number} paragraphs number of paragraphs (1 or 2)
+ * @param {boolean} thereAreImages if there are images, display the list, if not don't show them
+ * @param {object} paragraphText childern are one and two for first and second paragraph respectively
+ * @param {Array} images children are an array of objects with properties src and alt
+ * @returns {JSX}  with paragraph text, an array of images and a divider component
  */
 
 export const ImageTextDivider = ({paragraphs, thereAreImages, paragraphText, images}) => {
