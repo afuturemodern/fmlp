@@ -3,7 +3,7 @@ import Logo from "./Logo.js";
 import NavLinks from "./NavLinks";
 const HeaderContainer = styled.header`
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   flex-wrap: wrap;
 
   @media(max-width: 840px) {
