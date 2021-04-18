@@ -22,7 +22,7 @@ padding 1rem;
 
 
 const IntroArt = ({images}) => {
-  const displayImages = images.map(image => <img className={'displayImages'} key={image.alt} src={image.src} alt={image.alt} style={{ height: '16vh' }}/>)
+  const displayImages = images.map(image => <img className={'displayImages'} key={image.alt} src={image.src} alt={image.alt} style={{ height: '8rem' }}/>)
   return (
   <IntroArtContainer>
     {/* <img src={mandem} alt="mandem"/>
