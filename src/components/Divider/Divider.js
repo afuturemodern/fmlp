@@ -8,7 +8,7 @@ const DividerContainer = styled.span`
   flex-direction: column;
   align-items: center;
   position: relative;
-  margin: var(--space-large) auto;
+  margin: var(--space-large) 48vw;
   cursor: pointer;
   --divider-scale: scale(0.8);
   --triangle-top: 56%;

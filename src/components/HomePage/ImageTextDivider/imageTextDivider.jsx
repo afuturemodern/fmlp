@@ -14,25 +14,33 @@ import Divider from "../../Divider/Divider";
  * @returns {JSX}  with paragraph text, an array of images and a divider component
  */
 
+const ImageTextDividerContainer = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+`
+
 export const ImageTextDivider = ({paragraphs, thereAreImages, paragraphText, images}) => {
     if (paragraphs === 2 && thereAreImages){
-        return <>
+        return <ImageTextDividerContainer>
           <IntroText p1={paragraphText.one} p2={paragraphText.two}/> 
           <IntroArt images={images}/>
           <Divider/>
-        </>
+        </ImageTextDividerContainer>
     }
     else if (paragraphs === 1 && thereAreImages){
-        return <>
+        return <ImageTextDividerContainer>
         <IntroText p1={paragraphText.one} p2={null}/> 
         <IntroArt images={images}/>
         <Divider/>
-        </>
+        </ImageTextDividerContainer>
     }
     else return (
-        <>
+        <ImageTextDividerContainer>
         <IntroText/>
         <Divider/>
-        </>
+        </ImageTextDividerContainer>
     )
 }
