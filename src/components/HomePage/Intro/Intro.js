@@ -24,7 +24,7 @@ const IntroContainer = styled.div`
   grid-template-rows: 1fr 1fr;
   background-color: #ffffffaa;
   color: var(--text-color);
-  padding: var(--space-medium);
+  // padding: var(--space-medium);
 `;
 
 const firstSectionParagraphs = {
@@ -37,7 +37,7 @@ const secondSectionParagraphs = {
 }
 
 const firstSectionImages = [
-  {src:mandem, alt: 'Mandem'},
+  {src:mandem, alt: 'Mandem', mobile: 'mobile', },
   {src:natekodi, alt: 'natekodi'},
   {src:krusty, alt: 'Krusty'},
   {src:verbs, alt: 'Verbs'},

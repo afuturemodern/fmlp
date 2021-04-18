@@ -1,22 +1,28 @@
 import styled from "styled-components";
 
 const IntroParagraph = styled.p`
-  margin: var(--space-small) 32vw;
+  display: flex;
+  margin: var(--space-small) auto;
   text-align: center;
-  width: 30rem;
+  justify-content: center;
+  width: 60vw;
   font-weight: bold;
+  font-size: 1.3rem;
 `;
+
+
 
 const IntroText = ({p1, p2}) => {
   return (
     <>
       <IntroParagraph>
-        {/* we are future modern, a tech startup done differently. */}
         {p1}
+        {/* we are future modern, a tech startup done differently. */}
       </IntroParagraph>
       <IntroParagraph>
         {/* we exist to generate wealth for our community, not corporate
         shareholders. */}
+
         {p2}
       </IntroParagraph>
       {/* <IntroParagraph>
