@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Intro from "../components/HomePage/Intro/Intro.js";
 import Divider from "../components/Divider/Divider.js";
 import HomeCards from "../components/HomePage/HomeCards/HomeCards.js";
+import Logo from "../components/Header/Logo.js";
 
 const HomePageContainer = styled.div`
   display: flex;

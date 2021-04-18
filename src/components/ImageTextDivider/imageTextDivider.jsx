@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-import IntroArt from "../Intro/IntroArt";
-import IntroText from "../Intro/IntroText";
-import Divider from "../../Divider/Divider";
+import IntroArt from "../HomePage/Intro/IntroArt";
+import IntroText from "../HomePage/Intro/IntroText";
+import Divider from "../Divider/Divider";
 
 /**
  * ImageTextDivider

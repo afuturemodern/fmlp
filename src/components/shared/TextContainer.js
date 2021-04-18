@@ -1,6 +1,6 @@
 import styled from "styled-components";
 const Container = styled.div`
-  background-color: white;
+  background-color: #ffffffaa;
   color: var(--text-color);
   padding: 0 var(--space-medium);
 `;
@@ -8,3 +8,4 @@ const Container = styled.div`
 export default function TextContainer({ children }) {
   return <Container>{children}</Container>;
 }
+

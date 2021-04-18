@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import IntroText from "./IntroText.js";
 import IntroArt from "./IntroArt.js";
-import { ImageTextDivider } from "../ImageTextDivider/imageTextDivider.jsx";
+import { ImageTextDivider } from "../../ImageTextDivider/imageTextDivider.jsx";
 import { firstSectionImages, firstSectionParagraphs, secondSectionImages, secondSectionParagraphs } from './introData.js'
 
 
