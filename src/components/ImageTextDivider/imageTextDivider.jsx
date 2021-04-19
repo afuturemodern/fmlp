@@ -15,32 +15,39 @@ import Divider from "../Divider/Divider";
  */
 
 const ImageTextDividerContainer = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
 
-`
-
-export const ImageTextDivider = ({paragraphs, thereAreImages, paragraphText, images}) => {
-    if (paragraphs === 2 && thereAreImages){
-        return <ImageTextDividerContainer>
-          <IntroText p1={paragraphText.one} p2={paragraphText.two}/> 
-          <IntroArt images={images}/> 
-          <Divider/>
-        </ImageTextDividerContainer>
-    }
-    else if (paragraphs === 1 && thereAreImages){
-        return <ImageTextDividerContainer>
-        <IntroText p1={paragraphText.one} p2={null}/> 
-        <IntroArt images={images}/>
-        <Divider/>
-        </ImageTextDividerContainer>
-    }
-    else return (
-        <ImageTextDividerContainer>
-        <IntroText/>
-        <Divider/>
-        </ImageTextDividerContainer>
-    )
-}
+export const ImageTextDivider = ({
+  paragraphs,
+  thereAreImages,
+  paragraphText,
+  images,
+}) => {
+  if (paragraphs === 2 && thereAreImages) {
+    return (
+      <ImageTextDividerContainer>
+        <IntroText p1={paragraphText.one} p2={paragraphText.two} />
+        <IntroArt images={images} />
+        <Divider />
+      </ImageTextDividerContainer>
+    );
+  } else if (paragraphs === 1 && thereAreImages) {
+    return (
+      <ImageTextDividerContainer>
+        <IntroText p1={paragraphText.one} p2={null} />
+        <IntroArt images={images} />
+        <Divider />
+      </ImageTextDividerContainer>
+    );
+  } else
+    return (
+      <ImageTextDividerContainer>
+        <IntroText />
+        <Divider />
+      </ImageTextDividerContainer>
+    );
+};
