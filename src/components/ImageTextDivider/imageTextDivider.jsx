@@ -26,7 +26,7 @@ export const ImageTextDivider = ({paragraphs, thereAreImages, paragraphText, ima
     if (paragraphs === 2 && thereAreImages){
         return <ImageTextDividerContainer>
           <IntroText p1={paragraphText.one} p2={paragraphText.two}/> 
-          <IntroArt images={images}/>
+          <IntroArt images={images}/> 
           <Divider/>
         </ImageTextDividerContainer>
     }

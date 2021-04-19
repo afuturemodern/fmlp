@@ -14,8 +14,6 @@ const LogoContainer = styled(Link)`
   padding: var(--space-medium);
 `;
 
-
-
 const Logo = () => {
   return (
     <LogoContainer to="/">

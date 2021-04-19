@@ -21,11 +21,11 @@ function SocialIconWrapper (props) {
 function Footer() {
   return (
     <FooterContainer>
-      <SocialIconWrapper url="https://twitter.com/" className="social-icon" />
+      <SocialIconWrapper url="https://twitter.com/afuturemodern" className="social-icon" />
       <SocialIconWrapper url="https://instagram.com" className="social-icon" />
-      <SocialIconWrapper url="https://discord.com" className="social-icon" />
-      <SocialIconWrapper url="https://reddit.com" className="social-icon" />
-      <SocialIconWrapper url="https://rarible.com" className="social-icon" />
+      <SocialIconWrapper url="https://discord.com/invite/vzmaMbrQyp" className="social-icon" />
+      <SocialIconWrapper url="https://www.reddit.com/user/afuturemodern/" className="social-icon" />
+      <SocialIconWrapper url="https://rarible.com/afuturemodern" className="social-icon" />
     </FooterContainer>
   );
 }
