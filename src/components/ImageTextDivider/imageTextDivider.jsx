@@ -19,6 +19,7 @@ const ImageTextDividerContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 `;
 
 export const ImageTextDivider = ({

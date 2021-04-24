@@ -4,7 +4,7 @@ import HomeCard from "./Card.js";
 
 const Container = styled.div`
   display: grid;
-  // width: 95vw;
+  // width: 75vw;
   grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
    grid-gap: 1.5rem;
   margin: 0 var(--space-medium);

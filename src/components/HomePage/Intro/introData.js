@@ -13,21 +13,22 @@ import paris from '../../../images/introArt/paris.png'
 
 
 export const firstSectionParagraphs = {
-    one: 'We are future modern, a tech startup done differently.',
-    two: 'We exist to generate wealth for our community, not corporate shareholders.'
+    one: 'we are future modern, a tech startup done differently.',
+    two: 'we’re forming a new kind of media conglomerate, owned by its workers and ruled by its artists. we exist to produce wealth for our creators and community, not corporate shareholders.'
+
   }
   
 export const secondSectionParagraphs = {
-    one: 'future modern is owned by its workers and ruled by artists. we unlock the economic potential of undervalued communities by backing each other’s ideas for a better world, so we never need to sell them out to the powers that shouldn’t be.'
+    one: 'we develop independent systems to back ideas for and by undervalued communities, empowering them to capture that value without selling out to the powers that shouldn’t be. head to projects to check out what we’ll build first.'
   }
   
 export const firstSectionImages = [
-    {src:mandem, alt: 'Mandem', mobile: 'mobile', },
-    {src:natekodi, alt: 'natekodi'},
-    {src:krusty, alt: 'Krusty'},
-    {src:verbs, alt: 'Verbs'},
-    {src:meltingInLava, alt: 'Melting In Lava'},
-    {src:bigBabyGhandi, alt: 'Big Baby Ghandi'}
+    {src:mandem, alt: 'Mandem', href: 'https://mandemworldwide.com/shop/bluntflip-swipe',  },
+    {src:natekodi, alt: 'natekodi', href: 'https://opensea.io/accounts/natekodi' },
+    {src:krusty, alt: 'Krusty', href: 'https://www.krustywheatfield.com/'},
+    {src:verbs, alt: 'Verbs', href: 'https://qrco.de/Verbs'},
+    {src:meltingInLava, alt: 'Melting In Lava', href: 'https://meltinginlava.com/'},
+    {src:bigBabyGhandi, alt: 'Big Baby Ghandi', href: 'https://bigbabygandhi.bandcamp.com/album/big-fucking-baby'}
   ]
   
 export const secondSectionImages = [

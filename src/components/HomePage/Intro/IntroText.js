@@ -7,7 +7,9 @@ const IntroParagraph = styled.p`
   justify-content: center;
   width: 60vw;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size:  1.5rem;
+  margin-bottom: -.5rem;
+  padding-bottom: .5rem;
 `;
 
 

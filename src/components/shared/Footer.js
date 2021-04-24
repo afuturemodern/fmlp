@@ -18,14 +18,18 @@ function SocialIconWrapper (props) {
 
 // TODO: Add in correct links (use a json file with an array so it's easy to update/add/remove/reorder links)
 
+const footerIcons = [
+  { name: 'twitter', url: 'https://twitter.com/afuturemodern' },
+  { name: 'instagram', url: 'https://www.instagram.com/afuturemodern/' },
+  { name: 'discord', url: 'discord.gg/vzmaMbrQyp' },
+  { name: 'reddit', url: 'https://www.reddit.com/user/afuturemodern/' },
+  { name: 'replin', url: 'https://replin.com/afuturemodern' },
+].map(icon => <SocialIconWrapper url={icon.url} className="social-icon" />)
+
 function Footer() {
   return (
     <FooterContainer>
-      <SocialIconWrapper url="https://twitter.com/afuturemodern" className="social-icon" />
-      <SocialIconWrapper url="https://instagram.com" className="social-icon" />
-      <SocialIconWrapper url="https://discord.com/invite/vzmaMbrQyp" className="social-icon" />
-      <SocialIconWrapper url="https://www.reddit.com/user/afuturemodern/" className="social-icon" />
-      <SocialIconWrapper url="https://rarible.com/afuturemodern" className="social-icon" />
+      {footerIcons}
     </FooterContainer>
   );
 }

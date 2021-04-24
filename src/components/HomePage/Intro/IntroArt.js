@@ -15,13 +15,15 @@ const IntroArtContainer = styled.div`
 
 const IntroArt = ({ images }) => {
   const displayImages = images.map((image) => (
-    <img
-      className={"displayImages"}
-      key={image.alt}
-      src={image.src}
-      alt={image.alt}
-      style={{ height: "9rem" }}
-    />
+    <a href={image.href} target="_blank" rel="noreferrer">
+      <img
+        className={"displayImages"}
+        key={image.alt}
+        src={image.src}
+        alt={image.alt}
+        style={{ height: "9rem" }}
+      />
+    </a>
   ));
   return <IntroArtContainer>{displayImages}</IntroArtContainer>;
 };
