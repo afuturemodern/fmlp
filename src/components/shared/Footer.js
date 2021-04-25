@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { SocialIcon } from 'react-social-icons';
+import styled from 'styled-components';
+import { SocialIcons as SI } from './SocialIcons';
 
 const FooterContainer = styled.footer`
   display: flex;
@@ -12,24 +12,36 @@ const FooterContainer = styled.footer`
   }
 `;
 
-function SocialIconWrapper (props) {
-  return <SocialIcon className="social-icon" fgColor="white" {...props} />;
-}
-
 // TODO: Add in correct links (use a json file with an array so it's easy to update/add/remove/reorder links)
-
-const footerIcons = [
-  { name: 'twitter', url: 'https://twitter.com/afuturemodern' },
-  { name: 'instagram', url: 'https://www.instagram.com/afuturemodern/' },
-  { name: 'discord', url: 'discord.gg/vzmaMbrQyp' },
-  { name: 'reddit', url: 'https://www.reddit.com/user/afuturemodern/' },
-  { name: 'replin', url: 'https://replin.com/afuturemodern' },
-].map(icon => <SocialIconWrapper url={icon.url} className="social-icon" />)
 
 function Footer() {
   return (
     <FooterContainer>
-      {footerIcons}
+      <SI
+        logo="twitter"
+        url="https://twitter.com/afuturemodern"
+        backgroundColor="#7E589E"
+      />
+      <SI
+        logo="instagram"
+        url="https://instagram.com/afuturemodern"
+        backgroundColor="#02734A"
+      />
+      <SI
+        logo="discord"
+        url="https://discord.gg/vzmaMbrQyp"
+        backgroundColor="#D475A5"
+      />
+      <SI
+        logo="github"
+        url="https://github.com/afuturemodern"
+        backgroundColor="#2BA6D8"
+      />
+      <SI
+        logo="replin"
+        url="https://replin.com/afuturemodern"
+        backgroundColor="#5574F5"
+      />
     </FooterContainer>
   );
 }

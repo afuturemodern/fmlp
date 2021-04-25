@@ -36,7 +36,7 @@ export const PartnersGrid = () => {
                     alt={alt}
                     className="partnersCell"
                     style={{
-                        background: '#D4DCFB',
+                        background: '#93A9FF',
                         borderRadius: '36px',
                         width: '100%',
                         height: '3rem',
