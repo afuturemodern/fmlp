@@ -23,17 +23,17 @@ export const secondSectionParagraphs = {
   }
   
 export const firstSectionImages = [
-    {src:mandem, alt: 'Mandem', href: 'https://mandemworldwide.com/shop/bluntflip-swipe',  },
-    {src:natekodi, alt: 'natekodi', href: 'https://opensea.io/accounts/natekodi' },
-    {src:krusty, alt: 'Krusty', href: 'https://www.krustywheatfield.com/'},
-    {src:verbs, alt: 'Verbs', href: 'https://qrco.de/Verbs'},
-    {src:meltingInLava, alt: 'Melting In Lava', href: 'https://meltinginlava.com/'},
-    {src:bigBabyGhandi, alt: 'Big Baby Ghandi', href: 'https://bigbabygandhi.bandcamp.com/album/big-fucking-baby'}
-  ]
+  {src:mandem, alt: 'Mandem', href: 'https://mandemworldwide.com/shop/bluntflip-swipe',  },
+  {src:natekodi, alt: 'natekodi', href: 'https://opensea.io/accounts/natekodi' },
+  {src:krusty, alt: 'Krusty', href: 'https://www.krustywheatfield.com/'},
+  {src:verbs, alt: 'Verbs', href: 'https://qrco.de/Verbs'},
+  {src:meltingInLava, alt: 'Melting In Lava', href: 'https://meltinginlava.com/'},
+  {src:bigBabyGhandi, alt: 'Big Baby Ghandi', href: 'https://bigbabygandhi.bandcamp.com/album/big-fucking-baby'}
+]
   
 export const secondSectionImages = [
-    {src: auraMoreno, alt: 'Aura Moreno'},
-    {src: jimmy, alt: 'Jimmy'},
-    {src: bearCap, alt: 'Bearcap'},
-    {src: paris, alt: 'Paris'},
-  ]
+  {src: auraMoreno, alt: 'Aura Moreno'},
+  {src: jimmy, alt: 'Jimmy'},
+  {src: bearCap, alt: 'Bearcap'},
+  {src: paris, alt: 'Paris'},
+]
