@@ -1,11 +1,15 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Container = styled.div`
-  border: var(--space-medium) solid white;
-  border-radius: var(--space-medium);
-  background-color: white;
+  display: flex;
+  align-items: center;
+  border: 30px solid #366f49;
+  border-radius: 76px;
+  background-color: #366f49;
   box-shadow: 2px 3px 10px 1px #ddd;
   margin-bottom: var(--space-large);
+  margin: 0 auto;
+  // width: 25vw;
 `;
 const Content = styled.div`
   display: flex;
@@ -19,12 +23,12 @@ const CardImg = styled.img`
   /* width: 100%; */
   height: 50vh;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 `;
 
 const TextBody = styled.div`
   padding: var(--space-small);
-  background: #224852;
+  background: #366f49;
   color: white;
   display: flex;
   flex-flow: column;
@@ -40,7 +44,11 @@ const Description = styled.div`
 const LogoByline = styled.div`
   display: flex;
   align-items: center;
-  height: 80px;
+  justify-content: center;
+  height: 13vh;
+  width: 250px;
+  padding 4vh 0;
+  margin: 0 auto;
 `;
 
 const LogoSymbol = styled.img`
@@ -49,25 +57,43 @@ const LogoSymbol = styled.img`
 `;
 
 const Byline = styled.p`
-  font-size: 0.8rem;
+  font-size: 1.125rem;
+  color: white;
+  font-weight: 700;
 `;
 
 function HomeCard({
-  card: { img, byline, desc: Desc, description, logo, id },
+  card: { img, byline, desc: Desc, description, logo, id, href },
+  hasLogoSymbol,
 }) {
-  return (
+  return hasLogoSymbol ? (
     <Container>
       <Content>
-        <CardImg src={img} alt={byline} />
-        <TextBody>
-          <Description>
-            <Desc />
-          </Description>
-          <LogoByline>
-            <LogoSymbol src={logo} alt={`logo${id}`} />
-            <Byline>{byline}</Byline>
-          </LogoByline>
-        </TextBody>
+        <LogoByline>
+          <LogoSymbol src={logo} alt={`logo${id}`} />
+          <Byline>{byline}</Byline>
+        </LogoByline>
+        <a href={href}>
+          <CardImg src={img} alt={byline} />
+        </a>
+        <TextBody></TextBody>
+      </Content>
+    </Container>
+  ) : (
+    <Container>
+      <Content>
+        <LogoByline>
+          <LogoSymbol
+            src={logo}
+            alt={`logo${id}`}
+            style={{ visibility: 'hidden' }}
+          />
+          <Byline style={{ marginLeft: '-3.5rem' }}>{byline}</Byline>
+        </LogoByline>
+        <a href={href}>
+          <CardImg src={img} alt={byline} />
+        </a>
+        <TextBody></TextBody>
       </Content>
     </Container>
   );
