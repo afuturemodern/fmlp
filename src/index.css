@@ -41,3 +41,12 @@ html, body, #root {
   display: flex;
   flex-direction: column;
 }
+
+.hyperlinks {
+  color: #2E375F;
+}
+
+.hyperlinks:hover{
+  color: #2E375F;
+  font-weight: bold;
+}

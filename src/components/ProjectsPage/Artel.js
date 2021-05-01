@@ -1,7 +1,7 @@
-import Paragraph from "../shared/Paragraph";
-import Heading from "../shared/Heading";
-import TextContainer from "../shared/TextContainer";
-import BoldSpan from "../shared/BoldSpan";
+import Paragraph from '../shared/Paragraph';
+import Heading from '../shared/Heading';
+import TextContainer from '../shared/TextContainer';
+import BoldSpan from '../shared/BoldSpan';
 
 function Artel() {
   return (
@@ -17,8 +17,10 @@ function Artel() {
       </Paragraph>
       <Paragraph>
         interact with and invest in members of artel directly using our social
-        tokens, $FMB and $BUILD. holding enough of these tokens lets you access
-        hidden content in our private community discord, including
+        tokens, $FMB and{' '}
+        <a href="https://app.tryroll.com/token/BUILD">$BUILD</a>. holding enough
+        of these tokens lets you access hidden content in our private community
+        discord, including
       </Paragraph>
       <Paragraph>
         🎤live streamed performances, experiences, and art sales, from some
@@ -31,8 +33,17 @@ function Artel() {
       </Paragraph>
       <Paragraph>🎮 free entry cash prize gaming tournaments</Paragraph>
       <Paragraph>
-        and much, much more to come. learn more about the artel vision{" "}
-        <BoldSpan>here.</BoldSpan>
+        and much, much more to come. learn more about the artel vision{' '}
+        <BoldSpan>
+          <a
+            href={
+              'https://peakd.com/art/@artel/turning-acclaimed-indie-art-into-wealth-through-blockchain-welcome-to-the-artel'
+            }
+          >
+            here
+          </a>
+          .
+        </BoldSpan>
       </Paragraph>
     </TextContainer>
   );

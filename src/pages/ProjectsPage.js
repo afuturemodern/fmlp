@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import Divider from "../components/Divider/Divider.js";
-import Aeria from "../components/ProjectsPage/Aeria.js";
-import Estate from "../components/ProjectsPage/Estate.js";
-import Artel from "../components/ProjectsPage/Artel.js";
+import Divider from '../components/Divider/Divider.js';
+import Aeria from '../components/ProjectsPage/Aeria.js';
+import Estate from '../components/ProjectsPage/Estate.js';
+import Artel from '../components/ProjectsPage/Artel.js';
 
 const Container = styled.div`
   display: flex;
@@ -14,11 +14,11 @@ const Container = styled.div`
 function ProjectsPage() {
   return (
     <Container>
+      <Artel />
+      <Divider />
       <Aeria />
       <Divider />
       <Estate />
-      <Divider />
-      <Artel />
     </Container>
   );
 }
