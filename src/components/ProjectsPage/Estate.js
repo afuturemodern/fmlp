@@ -1,6 +1,6 @@
-import Paragraph from "../shared/Paragraph";
-import Heading from "../shared/Heading";
-import TextContainer from "../shared/TextContainer";
+import Paragraph from '../shared/Paragraph';
+import Heading from '../shared/Heading';
+import TextContainer from '../shared/TextContainer';
 
 function Estate() {
   return (
@@ -15,10 +15,37 @@ function Estate() {
         residents to invest in, own and steward their own neighborhoods.
       </Paragraph>
       <Paragraph>learn more or give feedback:</Paragraph>
-      <Paragraph>githubs</Paragraph>
-      <Paragraph>demo web app</Paragraph>
-      <Paragraph>smart contract research</Paragraph>
-      <Paragraph>e-state notion</Paragraph>
+
+      <Paragraph>
+        <a href="https://github.com/afuturemodern" className="hyperlinks">
+          githubs
+        </a>
+      </Paragraph>
+
+      <Paragraph>
+        <a
+          href="https://github.com/afuturemodern/e-state-fe"
+          className="hyperlinks"
+        >
+          demo web app
+        </a>
+      </Paragraph>
+      <Paragraph>
+        <a
+          href="https://github.com/afuturemodern/e-state"
+          className="hyperlinks"
+        >
+          smart contract research
+        </a>
+      </Paragraph>
+      <Paragraph>
+        <a
+          href="https://www.notion.so/e-state-peer-to-peer-real-estate-1fea5c001ab64506a5f99305a7c850d2"
+          className="hyperlinks"
+        >
+          e-state notion
+        </a>
+      </Paragraph>
     </TextContainer>
   );
 }

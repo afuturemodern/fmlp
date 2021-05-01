@@ -1,27 +1,74 @@
-import Paragraph from "../shared/Paragraph";
-import Heading from "../shared/Heading";
-import TextContainer from "../shared/TextContainer";
+import Paragraph from '../shared/Paragraph';
+import Heading from '../shared/Heading';
+import TextContainer from '../shared/TextContainer';
 
 function Aeria() {
   return (
     <TextContainer>
       <Heading>aeria</Heading>
       <Paragraph>
-        aeria is a music discovery technology that harnesses immersive,
-        interactive, intuitive display to center recommendation AI on the human,
-        not the platform, augmenting rather than automating. it reimagines
-        digital media discovery as a virtual, visualized exploration space where
-        creators connect dots, innovate, and chart their own pathways to success
-        in the future of art. our goal is to supercharge every artist's decision
-        making with machine learning, enabling anyone to find and execute on
-        creative opportunities at scale without a label.
+        artel is a collective empowering underground pioneers in art and media
+        with new ways to manifest the value of their work.
+      </Paragraph>
+      <Paragraph>
+        {' '}
+        we release artworks through innovations like blockchain, which enable
+        true artistic ownership and direct monetization from our supporters.
+      </Paragraph>
+      <Paragraph>
+        interact with and invest in members of artel directly using our social
+        tokens, $FMB and $BUILD. holding enough of these tokens lets you access
+        hidden content in our private community discord, including 🎤live
+        streamed performances, experiences, and art sales, from some names you
+        may know!
+      </Paragraph>
+      <Paragraph>
+        📈 educational resources, collaboration and gig opportunities with
+        subject matter experts on everything from software, to stocks and
+        cryptocurrency, to art, design, science, and more 🎮 free entry cash
+        prize gaming tournaments and much, much more to come. learn more about
+        the artel vision here.
       </Paragraph>
       <Paragraph>follow our progress or contribute:</Paragraph>
-      <Paragraph>githubs</Paragraph>
-      <Paragraph>demo web app</Paragraph>
-      <Paragraph>social network analysis research</Paragraph>
-      <Paragraph>audio analysis research</Paragraph>
-      <Paragraph>notion</Paragraph>
+      <Paragraph>
+        <a href="https://github.com/afuturemodern" className="hyperlinks">
+          githubs
+        </a>
+      </Paragraph>
+      <Paragraph>
+        <a
+          href={`https://www.figma.com/file/Jjs28AXfVtQogC73oCRsG2/future-modern-(Copy)?node-id=173%3A31`}
+          className="hyperlinks"
+        >
+          demo web app
+        </a>
+        <br />
+        <a
+          href="https://github.com/afuturemodern/aeriaWebsite"
+          className="hyperlinks"
+        >
+          social network analysis research
+        </a>
+        <br />
+        <a
+          href={
+            'https://www.figma.com/exit?url=https%3A%2F%2Fgithub.com%2Fafuturemodern%2FaudioAnalysis&fuid=876231781300439862'
+          }
+          className="hyperlinks"
+        >
+          audio analysis research
+        </a>
+      </Paragraph>
+      <Paragraph>
+        <a
+          href={
+            'https://www.figma.com/file/Jjs28AXfVtQogC73oCRsG2/future-modern-(Copy)?node-id=173%3A31'
+          }
+          className="hyperlinks"
+        >
+          notion
+        </a>
+      </Paragraph>
     </TextContainer>
   );
 }
