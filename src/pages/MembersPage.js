@@ -1,12 +1,12 @@
-import styled from "styled-components";
-import MemberCard from "../components/MembersPage/MemberCard.js";
+import styled from 'styled-components';
+import MemberCard from '../components/MembersPage/MemberCard.js';
 
-import members from "../components/MembersPage/members/members.js";
+import members from '../components/MembersPage/members/members.js';
 
 const MembersPageContainer = styled.div``;
 
 const ListContainer = styled.div`
-display: grid;
+  display: grid;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(276px, 1fr));
   margin: var(--space-large);
@@ -17,8 +17,8 @@ const MembersPage = () => {
   return (
     <MembersPageContainer>
       <ListContainer>
-        {members.map((m, i) => {
-          return <MemberCard member={m} key={i} />;
+        {members.map((member, i) => {
+          return <MemberCard member={member} key={i} />;
         })}
       </ListContainer>
     </MembersPageContainer>
