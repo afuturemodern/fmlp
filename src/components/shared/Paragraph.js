@@ -6,6 +6,9 @@ const Paragraph = styled.p`
   // height: 9vh;
   margin: 5vh auto;
   font-size: 1.2rem;
+  @media (max-width: 600px) {
+    width: 70vw;
+  }
 `;
 
 export default Paragraph;
