@@ -37,9 +37,9 @@ const TextBody = styled.div`
   align-items: center;
 `;
 
-const Description = styled.div`
-  flex-grow: 1;
-`;
+// const Description = styled.div`
+//   flex-grow: 1;
+// `;
 
 const LogoByline = styled.div`
   display: flex;
