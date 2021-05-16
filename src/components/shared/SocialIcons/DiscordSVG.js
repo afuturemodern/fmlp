@@ -1,4 +1,4 @@
-export default function GithubSVG() {
+export default function DiscordSVG() {
   return (
     <svg
       width="42"
