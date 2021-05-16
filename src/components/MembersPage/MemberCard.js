@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { SocialIcon } from 'react-social-icons';
+// import { SocialIcon } from 'react-social-icons';
+import { MemberCardIcons } from '../shared/SocialIcons';
 
 const CardContainer = styled.div`
   height: 100%;
@@ -33,6 +34,7 @@ const TextContainer = styled.div`
   p {
     color: white;
     text-align: center;
+    font-size: 1.2rem;
   }
 `;
 
@@ -43,19 +45,60 @@ const SocialIconContainer = styled.div`
   justify-content: center;
 `;
 
-function SocialIconWrapper(props) {
-  return <SocialIcon bgColor="transparent" fgColor="white" {...props} />;
-}
-
 const MemberCard = ({ member }) => {
+  const findSocial = (socialName) => {
+    return member.socials.find((social) => social.name === socialName);
+  };
+
   return (
     <CardContainer backgroundColor={member.cardColor}>
       <ProfilePic src={member.img} />
       <SocialAndTextContainer>
         <SocialIconContainer>
-          {member.socials.map((socialURL, i) => {
-            return <SocialIconWrapper url={socialURL} key={i} />;
-          })}
+          <MemberCardIcons
+            logo={'twitter'}
+            url={findSocial('twitter') ? findSocial('twitter').url : null}
+          />
+          <MemberCardIcons
+            logo={'instagram'}
+            url={findSocial('instagram') ? findSocial('instagram').url : null}
+          />
+          <MemberCardIcons
+            logo={'youtube'}
+            url={findSocial('youtube') ? findSocial('youtube').url : null}
+          />
+          <MemberCardIcons
+            logo={'audius'}
+            url={findSocial('audius') ? findSocial('audius').url : null}
+          />
+          <MemberCardIcons
+            logo={'rarible'}
+            url={findSocial('rarible') ? findSocial('rarible').url : null}
+          />
+          <MemberCardIcons
+            logo={'soundcloud'}
+            url={findSocial('soundcloud') ? findSocial('soundcloud').url : null}
+          />
+          <MemberCardIcons
+            logo={'cent'}
+            url={findSocial('cent') ? findSocial('cent').url : null}
+          />
+          <MemberCardIcons
+            logo={'bandcamp'}
+            url={findSocial('bandcamp') ? findSocial('bandcamp').url : null}
+          />
+          <MemberCardIcons
+            logo={'appleMusic'}
+            url={findSocial('appleMusic') ? findSocial('appleMusic').url : null}
+          />
+          <MemberCardIcons
+            logo={'spotify'}
+            url={findSocial('spotify') ? findSocial('spotify').url : null}
+          />
+          <MemberCardIcons
+            logo={'website'}
+            url={findSocial('website') ? findSocial('website').url : null}
+          />
         </SocialIconContainer>
         <TextContainer>
           <p>{member.name}</p>

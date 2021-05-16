@@ -9,14 +9,14 @@ import ghandi from '../members/images/ghandi.png';
 import lava from '../members/images/lava.png';
 import timothy from '../members/images/tf.png';
 
-import basakSocials from '../members/membersData/basakSocials.json';
-import nateSocials from '../members/membersData/nateSocials.json';
-import chibuSocials from '../members/membersData/chibuSocials.json';
-import timothySocials from '../members/membersData/timothySocials.json';
+import { basakSocials } from './membersData/basakSocials';
+import { nateSocials } from './membersData/nateSocials';
+import { chibuSocials } from './membersData/chibuSocials';
+import { timothySocials } from './membersData/timothySocials';
 // import alizaSocials from '../members/membersData/alizaSocials.json';
-import ansonSocials from '../members/membersData/ansonSocials.json';
-import ghandiSocials from '../members/membersData/ghandiSocials.json';
-import lavaSocials from '../members/membersData/lavaSocials.json';
+import { ansonSocials } from './membersData/ansonSocials';
+import { ghandiSocials } from './membersData/ghandiSocials';
+import { lavaSocials } from './membersData/lavaSocials';
 
 const members = [
   {
@@ -78,6 +78,13 @@ const members = [
     socials: lavaSocials,
     cardColor: '#2BA6D8',
   },
+  // {
+  //   name: 'Meltinginlava',
+  //   img: lava,
+  //   title: '',
+  //   socials: lavaSocials,
+  //   cardColor: '#2BA6D8',
+  // },
 ];
 
 export default members;
