@@ -8,6 +8,8 @@ import ghandi from '../members/images/ghandi.png';
 // import kelsey from '../members/images/kelsey.png';
 import lava from '../members/images/lava.png';
 import timothy from '../members/images/tf.png';
+import paris from '../members/images/paris.png';
+// import manny from '../members/images/manny.png';
 
 import { basakSocials } from './membersData/basakSocials';
 import { nateSocials } from './membersData/nateSocials';
@@ -17,6 +19,7 @@ import { timothySocials } from './membersData/timothySocials';
 import { ansonSocials } from './membersData/ansonSocials';
 import { ghandiSocials } from './membersData/ghandiSocials';
 import { lavaSocials } from './membersData/lavaSocials';
+import { parisSocials } from './membersData/parisSocials';
 
 const members = [
   {
@@ -29,7 +32,7 @@ const members = [
   {
     name: 'NateKodi',
     img: nate,
-    title: 'Artist',
+    title: 'Co-Founder, Artist',
     socials: nateSocials,
     cardColor: '#66B47B',
   },
@@ -43,7 +46,7 @@ const members = [
   {
     name: 'Timothy Ford',
     img: timothy,
-    title: '',
+    title: 'Artist',
     socials: timothySocials,
     cardColor: '#366F49',
   },
@@ -59,7 +62,7 @@ const members = [
   {
     name: 'Anson Goode Jr',
     img: anson,
-    title: '',
+    title: 'Artist',
     socials: ansonSocials,
     cardColor: '#76BE8D',
   },
@@ -67,24 +70,24 @@ const members = [
   {
     name: 'Big Baby Ghandi',
     img: ghandi,
-    title: '',
+    title: 'Artist',
     socials: ghandiSocials,
     cardColor: '#5574F5',
   },
   {
     name: 'Meltinginlava',
     img: lava,
-    title: '',
+    title: 'Artist',
     socials: lavaSocials,
     cardColor: '#2BA6D8',
   },
-  // {
-  //   name: 'Meltinginlava',
-  //   img: lava,
-  //   title: '',
-  //   socials: lavaSocials,
-  //   cardColor: '#2BA6D8',
-  // },
+  {
+    name: 'Paris Nicole',
+    img: paris,
+    title: 'Artist',
+    socials: parisSocials,
+    cardColor: '#D475A5',
+  },
 ];
 
 export default members;
