@@ -3,7 +3,7 @@ import nate from '../members/images/nate.png';
 import chibu from '../members/images/chibu.png';
 // import aliza from '../members/images/aliza.png';
 import anson from '../members/images/anson.png';
-import ghandi from '../members/images/ghandi.png';
+import gandhi from '../members/images/gandhi.png';
 // import jay from '../members/images/jay.png';
 // import kelsey from '../members/images/kelsey.png';
 import lava from '../members/images/lava.png';
@@ -17,7 +17,7 @@ import { chibuSocials } from './membersData/chibuSocials';
 import { timothySocials } from './membersData/timothySocials';
 // import alizaSocials from '../members/membersData/alizaSocials.json';
 import { ansonSocials } from './membersData/ansonSocials';
-import { ghandiSocials } from './membersData/ghandiSocials';
+import { gandhiSocials } from './membersData/gandhiSocials';
 import { lavaSocials } from './membersData/lavaSocials';
 import { parisSocials } from './membersData/parisSocials';
 
@@ -68,10 +68,10 @@ const members = [
   },
   // { name: "Manny", img: manny, title: "", socials:mannySocials , cardColor: "#02734A" },
   {
-    name: 'Big Baby Ghandi',
-    img: ghandi,
+    name: 'Big Baby Gandhi',
+    img: gandhi,
     title: 'Artist',
-    socials: ghandiSocials,
+    socials: gandhiSocials,
     cardColor: '#5574F5',
   },
   {

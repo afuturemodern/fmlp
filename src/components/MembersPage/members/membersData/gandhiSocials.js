@@ -1,4 +1,4 @@
-export const ghandiSocials = [
+export const gandhiSocials = [
   { name: 'twitter', url: 'https://twitter.com/BIGBABYGANDHI' },
   { name: 'instagram', url: 'https://www.instagram.com/lil_baby_boi/' },
   {
