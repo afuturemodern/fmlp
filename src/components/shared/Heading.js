@@ -5,6 +5,7 @@ const Heading = styled.h2`
   width: 45vw;
   height: 3vh;
   margin: 4vh auto;
+  font-size: 1.8rem;
   @media (max-width: 600px) {
     width: 70vw;
   }

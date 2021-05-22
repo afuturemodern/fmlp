@@ -5,7 +5,7 @@ const Paragraph = styled.p`
   width: 45vw;
   // height: 9vh;
   margin: 5vh auto;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   @media (max-width: 600px) {
     width: 70vw;
   }

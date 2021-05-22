@@ -1,17 +1,16 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import { ImageTextDivider } from "../../ImageTextDivider/imageTextDivider.jsx";
+import { ImageTextDivider } from '../../ImageTextDivider/imageTextDivider.jsx';
 import {
   firstSectionImages,
   firstSectionParagraphs,
   secondSectionImages,
   secondSectionParagraphs,
-} from "./introData.js";
+} from './introData.js';
 
 const IntroContainer = styled.div`
   display: grid;
   grid-template-rows: 1fr 1fr;
-  background-color: #ffffffaa;
   color: var(--text-color);
   // padding: var(--space-medium);
 `;
