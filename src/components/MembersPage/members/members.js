@@ -4,12 +4,12 @@ import chibu from '../members/images/chibu.png';
 // import aliza from '../members/images/aliza.png';
 import anson from '../members/images/anson.png';
 import gandhi from '../members/images/gandhi.png';
-// import jay from '../members/images/jay.png';
+import jay from '../members/images/jay.png';
 // import kelsey from '../members/images/kelsey.png';
 import lava from '../members/images/lava.png';
 import timothy from '../members/images/tf.png';
 import paris from '../members/images/paris.png';
-// import manny from '../members/images/manny.png';
+import manny from '../members/images/manny.png';
 
 import { basakSocials } from './membersData/basakSocials';
 import { nateSocials } from './membersData/nateSocials';
@@ -20,6 +20,8 @@ import { ansonSocials } from './membersData/ansonSocials';
 import { gandhiSocials } from './membersData/gandhiSocials';
 import { lavaSocials } from './membersData/lavaSocials';
 import { parisSocials } from './membersData/parisSocials';
+import { jaySocials } from './membersData/jaySocials';
+import { mannySocials } from './membersData/mannySocials';
 
 const members = [
   {
@@ -58,7 +60,13 @@ const members = [
   //   cardColor: '#AFA5CA',
   // },
   // { name: "Kelsey Westphal", img: kelsey, title: "", socials:kelseySocials , cardColor: "#D475A5" },
-  // { name: "Jay", img: jay, title: "", socials: jaySocials , cardColor: "#7E589E" },
+  {
+    name: 'Jay',
+    img: jay,
+    title: 'Business Development',
+    socials: jaySocials,
+    cardColor: '#7E589E',
+  },
   {
     name: 'Anson Goode Jr',
     img: anson,
@@ -66,7 +74,13 @@ const members = [
     socials: ansonSocials,
     cardColor: '#76BE8D',
   },
-  // { name: "Manny", img: manny, title: "", socials:mannySocials , cardColor: "#02734A" },
+  {
+    name: 'Manny',
+    img: manny,
+    title: 'Member',
+    socials: mannySocials,
+    cardColor: '#02734A',
+  },
   {
     name: 'Big Baby Gandhi',
     img: gandhi,
