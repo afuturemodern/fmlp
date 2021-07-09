@@ -34,7 +34,7 @@ const members = [
   {
     name: 'NateKodi',
     img: nate,
-    title: 'Co-Founder, Artist',
+    title: 'Artist',
     socials: nateSocials,
     cardColor: '#66B47B',
   },
