@@ -8,7 +8,7 @@ const CardContainer = styled.div`
   border: var(--space-medium) solid ${(props) => props.backgroundColor};
   border-radius: var(--space-medium);
   box-shadow: 2px 3px 10px 1pƒx #ddd;
-  margin-bottom: var(--space-large);
+  margin-bottom: var(--space-medium);
   background-color: ${(props) => props.backgroundColor};
 `;
 
