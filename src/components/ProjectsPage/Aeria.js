@@ -7,27 +7,15 @@ function Aeria() {
     <TextContainer>
       <Heading>aeria</Heading>
       <Paragraph>
-        artel is a collective empowering underground pioneers in art and media
-        with new ways to manifest the value of their work.
+      aeria is an interactive map of the social web that helps complementary communities efficiently discover each other. 
+      it reimagines search in virtual space, where creators connect dots, innovate, and chart their own pathways to success in the future of art. 
+
       </Paragraph>
+ 
+     
       <Paragraph>
-        {' '}
-        we release artworks through innovations like blockchain, which enable
-        true artistic ownership and direct monetization from our supporters.
-      </Paragraph>
-      <Paragraph>
-        interact with and invest in members of artel directly using our social
-        tokens, $FMB and $BUILD. holding enough of these tokens lets you access
-        hidden content in our private community discord, including 🎤live
-        streamed performances, experiences, and art sales, from some names you
-        may know!
-      </Paragraph>
-      <Paragraph>
-        📈 educational resources, collaboration and gig opportunities with
-        subject matter experts on everything from software, to stocks and
-        cryptocurrency, to art, design, science, and more 🎮 free entry cash
-        prize gaming tournaments and much, much more to come. learn more about
-        the artel vision here.
+      our goal is to supercharge every artist's decision making with human led machine intelligence, 
+      enabling anyone to find and execute on creative opportunities at scale on their own terms.
       </Paragraph>
       <Paragraph>follow our progress or contribute:</Paragraph>
       <Paragraph>
