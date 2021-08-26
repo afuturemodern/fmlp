@@ -41,10 +41,11 @@ const BuyForm = () => {
   const {
     register,
     handleSubmit,
-    watch,
+    // watch,
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => console.log('submitted Data --> ', data);
+  // const onSubmit = (data) => {};
   // console.log('watching...', watch('email')); // watch input value by passing the name of it
 
   // todo: insert autoslash for expiration date, auto space for card number inputs
