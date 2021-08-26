@@ -34,6 +34,7 @@ const InputStyle = styled.input`
 `;
 
 const emailPattern =
+  // eslint-disable-next-line no-control-regex
   /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/;
 
 const BuyForm = () => {
@@ -44,12 +45,12 @@ const BuyForm = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => console.log('submitted Data --> ', data);
-  console.log('watching...', watch('email')); // watch input value by passing the name of it
+  // console.log('watching...', watch('email')); // watch input value by passing the name of it
 
   // todo: insert autoslash for expiration date, auto space for card number inputs
-  const autoSlash = (input) => {
-    if (input.length === 2) return input + '/';
-  };
+  // const autoSlash = (input) => {
+  //   if (input.length === 2) return input + '/';
+  // };
 
   return (
     <FormStyle onSubmit={handleSubmit(onSubmit)}>
