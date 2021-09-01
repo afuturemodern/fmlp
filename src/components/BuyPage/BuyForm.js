@@ -39,6 +39,7 @@ const Container = styled.div`
   line-height: 1.5rem;
   font-size: 1.3rem;
   width: 30vw;
+  margin: 0 auto;
 `;
 
 const BuyForm = () => {

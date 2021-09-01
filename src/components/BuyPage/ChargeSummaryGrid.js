@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Heading from '../shared/Heading';
+// import Heading from '../shared/Heading';
 
 const ChargeSummaryGridStyle = styled.div``;
 const Grid = styled.div`

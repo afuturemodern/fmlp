@@ -10,15 +10,18 @@ const BuyContainer = styled.div``;
 const PaymentContainer = styled.div`
   display: flex;
   flex-direction: row;
-  // jusify-content: center;
+  justify-content: center;
+  align-items: center;
 `;
 
 const ImageStyle = styled.div`
-  // width: 30vw;
+  padding: 2rem;
+  border-radius: 36px;
+  background-color: #2e375f;
 `;
 
 const Image = ({ src, alt }) => {
-  return <img src={src} alt={alt} width={'300rem'} />;
+  return <img src={src} alt={alt} width={'400rem'} />;
 };
 
 function BuyPage() {
@@ -35,9 +38,9 @@ function BuyPage() {
           <Image src={SoulfulOfNoise} alt={'SoulfulofNoise Music Festival'} />
           {/* </a> */}
         </ImageStyle>
-        <BuyForm />
         <ChargeSummaryGrid />
       </PaymentContainer>
+      <BuyForm />
       {/* terms of sevice link */}
       <TermsDisclaimer />
     </BuyContainer>
