@@ -24,12 +24,12 @@ const paypal_options = {
 };
 
 const PaypalContainerStyle = styled.div`
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
 `;
 const CardContainerStyle = styled.div`
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
 `;
 
 const Container = styled.div`
@@ -38,12 +38,13 @@ const Container = styled.div`
   padding: 3rem;
   line-height: 1.5rem;
   font-size: 1.3rem;
+  width: 30vw;
 `;
 
 const BuyForm = () => {
   return (
-    <PayPalScriptProvider options={paypal_options}>
-      <Container>
+    <Container>
+      <PayPalScriptProvider options={paypal_options}>
         <PaypalContainerStyle>
           <PayPalButtons
             style={paypal_button_style}
@@ -57,8 +58,8 @@ const BuyForm = () => {
             fundingSource={FUNDING.CARD}
           />
         </CardContainerStyle>
-      </Container>
-    </PayPalScriptProvider>
+      </PayPalScriptProvider>
+    </Container>
   );
 };
 
