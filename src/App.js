@@ -8,7 +8,7 @@ import HomePage from './pages/HomePage.js';
 import MissionPage from './pages/MissionPage.js';
 import MembersPage from './pages/MembersPage.js';
 import ProjectsPage from './pages/ProjectsPage.js';
-import BuyPage from './pages/BuyPage.js';
+import BuyPage from './pages/BuyPage';
 
 const Main = styled.main`
   flex-grow: 1;

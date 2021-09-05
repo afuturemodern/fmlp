@@ -24,12 +24,8 @@ const paypal_options = {
 };
 
 const PaypalContainerStyle = styled.div`
-  // display: flex;
-  // justify-content: center;
 `;
 const CardContainerStyle = styled.div`
-  // display: flex;
-  // justify-content: center;
 `;
 
 const Container = styled.div`
@@ -42,8 +38,9 @@ const Container = styled.div`
   margin: 0 auto;
 `;
 
-const BuyForm = () => {
+const PaymentButtons = () => {
   return (
+    
     <Container>
       <PayPalScriptProvider options={paypal_options}>
         <PaypalContainerStyle>
@@ -61,7 +58,8 @@ const BuyForm = () => {
         </CardContainerStyle>
       </PayPalScriptProvider>
     </Container>
+    
   );
 };
 
-export default BuyForm;
+export default PaymentButtons;
