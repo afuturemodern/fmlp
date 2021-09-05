@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const initialBuyPageStore = {
-  amount: 50,
+  price: 50,
   // amountOptions: [50, 69],
   amountOptions: [50],
 };
@@ -13,7 +13,7 @@ export const buyPageReducer = (state, { type, payload }) => {
     case 'updateAmount': {
       return {
         ...state,
-        amount: payload,
+        price: payload,
       };
     }
     default:

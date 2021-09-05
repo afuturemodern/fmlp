@@ -38,13 +38,13 @@ const ChargeSummaryGrid = () => {
     <ChargeSummaryGridStyle>
       <Grid>
         <GridItem>
-          <SubHeader>Number of Tokens</SubHeader>
-          <Span>{store.amount} BU1DL</Span>
+          <SubHeader>number of tokens</SubHeader>
+          <Dropdown name="amount" id="amount" list={store.amountOptions} onChange={handleChange}/>
+          <Span>{` BU1DL`}</Span>
         </GridItem>
         <GridItem>
-          <SubHeader>Price</SubHeader>
-          <Dropdown name="Amount" id="amount" list={store.amountOptions} onChange={handleChange}/>
-          {/* <Span>{`$${buyPagecontext.amount}`}</Span> */}
+          <SubHeader>price</SubHeader>
+          <Span>${store.price} </Span>
         </GridItem>
       </Grid>
     </ChargeSummaryGridStyle>
