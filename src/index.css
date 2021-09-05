@@ -24,6 +24,8 @@
 
 html {
   background: url("images/background_art.png");
+  background-size: cover;
+  background-repeat: none;
 }
 
 body {

@@ -2,15 +2,21 @@ import { useContext } from 'react'
 import styled from 'styled-components';
 import { BuyPageContext } from './store';
 
-const ChargeSummaryGridStyle = styled.div``;
+const ChargeSummaryGridStyle = styled.div`
+flex-grow: 1;`;
 const Grid = styled.div`
   
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 8rem;
+  display: flex;
+  justify-content: space-around;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
 `;
 const GridItem = styled.div`
-  
+  @media (max-width: 1200px) {
+    margin-bottom: var(--space-medium);
+  }
 `;
 const Span = styled.span`
  

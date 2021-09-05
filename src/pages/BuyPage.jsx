@@ -7,16 +7,33 @@ import TermsDisclaimer from '../components/BuyPage/TermsDisclaimer';
 import Heading from '../components/shared/Heading.js';
 import SoulfulOfNoise from '../images/SoufulOfNoise.jpeg';
 
-const BuyContainer = styled.div``;
+const BuyContainer = styled.div`
+--page-width: 70vw;
+--max-page-width: 1200px;
+`;
+
+const BuyHeader = styled(Heading)`
+width: var(--page-width);
+max-width: var(--max-page-width);
+`;
+
 
 const PaymentContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  width: var(--page-width);
+  max-width: var(--max-page-width);
+  margin: 0 auto;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
 `;
 
-const ImageStyle = styled.div`
+const ImageWrapper = styled.div`
   padding: 2rem;
+  width: calc(400px + 4rem );
+  max-width: var(--page-width);
   border-radius: 36px;
   background-color: #2e375f;
   &:hover{
@@ -24,11 +41,19 @@ const ImageStyle = styled.div`
     
   }
   
+  @media (max-width: 1200px) {
+    margin-right: var(--space-medium);
+  }
+
+  @media (max-width: 900px) {
+    margin-right: 0;
+    margin-bottom: var(--space-medium);
+  }
 `;
 
 
 const Image = ({ src, alt }) => {
-  return <img src={src} alt={alt} width={'400rem'} onClick={() => window.open('https://soulfulofnoise.com')} />;
+  return <img src={src} alt={alt} width={'400'} style={{maxWidth: "calc( 70vw - 4rem )"}}  onClick={() => window.open('https://soulfulofnoise.com')} />;
 };
 
 function BuyPage() {
@@ -38,12 +63,12 @@ function BuyPage() {
   return (
     <BuyPageContext.Provider value={{store, dispatch}}>
       <BuyContainer>
-        <Heading>buy BU1DL tokens:</Heading>
+        <BuyHeader>buy BU1DL tokens:</BuyHeader>
         {/* add amount and total compnent */}
         <PaymentContainer>
-          <ImageStyle>
+          <ImageWrapper>
             <Image src={SoulfulOfNoise} alt={'SoulfulofNoise Music Festival'} />
-          </ImageStyle>
+          </ImageWrapper>
           <ChargeSummaryGrid />
         </PaymentContainer>
         <PaymentButtons />

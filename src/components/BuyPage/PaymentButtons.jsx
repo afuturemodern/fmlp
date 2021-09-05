@@ -24,18 +24,33 @@ const paypal_options = {
 };
 
 const PaypalContainerStyle = styled.div`
+flex-grow:1;
+margin: 0 var(--space-small);
+@media (max-width: 600px) {
+  margin: var(--space-small) 0;
+}
 `;
 const CardContainerStyle = styled.div`
+flex-grow: 1;
+margin: 0 var(--space-tiny);
+
+@media (max-width: 600px) {
+  margin: var(--space-tiny) 0;
+}
 `;
 
 const Container = styled.div`
   display: flex;
-  flex-direction: column;
-  padding: 3rem;
   line-height: 1.5rem;
   font-size: 1.3rem;
-  width: 30vw;
-  margin: 0 auto;
+  width: 70vw;
+  max-width: 1200px;
+  margin: 3rem auto;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    margin: 1rem auto;
+  }
 `;
 
 const PaymentButtons = () => {
