@@ -1,7 +1,28 @@
 import React from 'react';
-import BuyForm from '../BuyForm';
-import { render, fireEvent, waitFor, screen } from '@testing-library/react';
+import TermsDisclaimer from '../TermsDisclaimer';
+// import Paragraph from '../shared/Paragraph';
 
-test('ByForm component is rendering', () => {});
+import { render, screen } from '@testing-library/react';
 
-test('Check if form labels are correct', () => {});
+beforeEach(() => {
+  render(<TermsDisclaimer />);
+});
+
+it('Should have a paragraph component', () => {
+  const styledParagraph = screen.getByText(
+    'By making a transaction you are agreeing to our'
+  );
+  expect(styledParagraph).toHaveTextContent(
+    'By making a transaction you are agreeing to our Terms and Conditions'
+  );
+});
+
+it('Should render a link', () => {
+  const a = screen.getByRole('link');
+  expect(a).toBeInTheDocument();
+});
+
+it('Should contain link to terms and conditions page( goes to homepage for now)', () => {
+  const a = screen.getByText(/Terms and Conditions/i);
+  expect(a).toHaveAttribute('href', '/');
+});

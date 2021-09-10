@@ -11,7 +11,7 @@ const TermsDisclaimer = () => {
     <>
       <StyledParagraph>
         By making a transaction you are agreeing to our{' '}
-        <a href="/">Terms and conditions</a>
+        <a href="/">Terms and Conditions</a>
       </StyledParagraph>
     </>
   );
