@@ -5,9 +5,6 @@ import {
   FUNDING,
 } from '@paypal/react-paypal-js';
 
-const PAYPAL_CLIENT_ID =
-  'AWdHpI51fVvKquVN3KDB6wi-S_ad7Hm-eElY6tAJbCwlSDKoW7tOtZI1q8z8wW7isA_AuRimSoimd-12';
-
 const paypal_button_style = {
   color: 'blue',
   shape: 'pill',
@@ -18,7 +15,7 @@ const card_button_style = {
 };
 
 const paypal_options = {
-  'client-id': PAYPAL_CLIENT_ID,
+  'client-id': process.env.REACT_APP_PAYPAL_CLIENT_ID,
   currency: 'USD',
   intent: 'capture',
 };
@@ -53,6 +50,15 @@ const Container = styled.div`
   }
 `;
 
+const handleCreateOrder = (data, actions) => actions.order.create({
+  purchase_units: [
+    { amount: {value: '0.01'}}
+  ]
+})
+
+//function that does somethiing after successful transaction
+const handleApprove = () => {console.log('approved!')}
+
 const PaymentButtons = () => {
   return (
     
@@ -62,6 +68,8 @@ const PaymentButtons = () => {
           <PayPalButtons
             style={paypal_button_style}
             fundingSource={FUNDING.PAYPAL}
+            createOrder={handleCreateOrder}
+            onApprove={handleApprove}
           />
         </PaypalContainerStyle>
 
@@ -69,6 +77,8 @@ const PaymentButtons = () => {
           <PayPalButtons
             style={card_button_style}
             fundingSource={FUNDING.CARD}
+            createOrder={handleCreateOrder}
+            onApprove={handleApprove}
           />
         </CardContainerStyle>
       </PayPalScriptProvider>
