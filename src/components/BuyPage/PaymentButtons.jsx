@@ -4,6 +4,8 @@ import {
   PayPalButtons,
   FUNDING,
 } from '@paypal/react-paypal-js';
+import { useContext, useEffect } from 'react';
+import { BuyPageContext } from './store';
 
 const paypal_button_style = {
   color: 'blue',
@@ -15,7 +17,7 @@ const card_button_style = {
 };
 
 const paypal_options = {
-  'client-id': process.env.REACT_APP_PAYPAL_CLIENT_ID,
+  'client-id': 'AWdHpI51fVvKquVN3KDB6wi-S_ad7Hm-eElY6tAJbCwlSDKoW7tOtZI1q8z8wW7isA_AuRimSoimd-12',
   currency: 'USD',
   intent: 'capture',
 };
@@ -50,17 +52,39 @@ const Container = styled.div`
   }
 `;
 
-const handleCreateOrder = (data, actions) => actions.order.create({
-  purchase_units: [
-    { amount: {value: '0.01'}}
-  ]
-})
 
 //function that does somethiing after successful transaction
-const handleApprove = () => {console.log('approved!')}
 
 const PaymentButtons = () => {
+  const { store , dispatch} = useContext(BuyPageContext);
+  
+  const handleApprove = () => {
+    dispatch({type: 'updateIsPaymentSuccessful'})
+  }
+  const handleCancel = () => {
+    dispatch({type: 'updateIsPaymentCanceled'})
+  }
+  const handleError = () => {
+    dispatch({type: 'updateIsPaymentError'})
+  }
+  
+  
+  const handleCreateOrder = (data, actions) => actions.order.create({
+    purchase_units: [
+      { amount: {value: '0.01'}}
+    ],
+  })
+  
+  useEffect(() => {
+    if(store.isPaymentSuccessful){
+      setTimeout(() => {
+        window.location = '/'
+      },5000)
+    }
+  }, [store.isPaymentSuccessful])
+
   return (
+
     
     <Container>
       <PayPalScriptProvider options={paypal_options}>
@@ -70,6 +94,8 @@ const PaymentButtons = () => {
             fundingSource={FUNDING.PAYPAL}
             createOrder={handleCreateOrder}
             onApprove={handleApprove}
+            onCancel={handleCancel}
+            onError={handleError}
           />
         </PaypalContainerStyle>
 

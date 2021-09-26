@@ -6,6 +6,9 @@ import ChargeSummaryGrid from '../components/BuyPage/ChargeSummaryGrid.jsx';
 import TermsDisclaimer from '../components/BuyPage/TermsDisclaimer';
 import Heading from '../components/shared/Heading.js';
 import SoulfulOfNoise from '../images/SoufulOfNoise.jpeg';
+import PaymentSuccessfulMessage from '../components/BuyPage/PaymentSuccessfulMessage';
+import PaymentCanceledMessage from '../components/BuyPage/PaymentCanceledMessage';
+import PaymentErrorMessage from '../components/BuyPage/PaymentErrorMessage';
 
 const BuyContainer = styled.div`
 --page-width: 70vw;
@@ -71,6 +74,9 @@ function BuyPage() {
           </ImageWrapper>
           <ChargeSummaryGrid />
         </PaymentContainer>
+          <PaymentSuccessfulMessage />
+          <PaymentCanceledMessage />
+          <PaymentErrorMessage />
         <PaymentButtons />
         <TermsDisclaimer />
       </BuyContainer>

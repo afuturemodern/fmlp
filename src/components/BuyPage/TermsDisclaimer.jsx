@@ -4,6 +4,7 @@ import Paragraph from '../shared/Paragraph';
 const StyledParagraph = styled(Paragraph)`
 width: 70vw;
 max-width: 1200px;
+text-align: center;
 `;
 
 const TermsDisclaimer = () => {
