@@ -4,7 +4,7 @@ import {
   PayPalButtons,
   FUNDING,
 } from '@paypal/react-paypal-js';
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import { BuyPageContext } from './store';
 
 const paypal_button_style = {
@@ -56,7 +56,7 @@ const Container = styled.div`
 //function that does somethiing after successful transaction
 
 const PaymentButtons = () => {
-  const { store , dispatch} = useContext(BuyPageContext);
+  const {dispatch} = useContext(BuyPageContext);
   
   const handleApprove = () => {
     dispatch({type: 'updateIsPaymentSuccessful'})
@@ -74,14 +74,6 @@ const PaymentButtons = () => {
       { amount: {value: '0.01'}}
     ],
   })
-  
-  useEffect(() => {
-    if(store.isPaymentSuccessful){
-      setTimeout(() => {
-        window.location = '/'
-      },5000)
-    }
-  }, [store.isPaymentSuccessful])
 
   return (
 

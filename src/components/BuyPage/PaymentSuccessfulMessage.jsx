@@ -1,4 +1,4 @@
-import {useContext} from 'react'
+import {useContext, useEffect} from 'react'
 import styled from 'styled-components';
 import Paragraph from '../shared/Paragraph';
 import { BuyPageContext } from './store';
@@ -16,11 +16,17 @@ const PaymentSuccessfulMessage = () => {
   display: ${store.isPaymentSuccessful ? 'block' : 'none'};
   `;
 
+  useEffect(() => {
+    if(store.isPaymentSuccessful) 
+    setTimeout(() => dispatch({type: 'updateIsPaymentSuccessful'}) ,5000)
+    
+  }, [store.isPaymentSuccessful, dispatch])
+
 
   return (
     <>
       <StyledParagraph>
-        payment successful! returning to homepage
+        payment successful!
       </StyledParagraph>
     </>
   );
