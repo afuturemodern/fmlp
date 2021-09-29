@@ -23,6 +23,7 @@ const Span = styled.span`
 `;
 
 const SubHeader = styled.h2`
+margin-bottom: 20px;
 `;
 
 
