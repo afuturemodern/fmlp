@@ -38,7 +38,7 @@ const ImageWrapper = styled.div`
   width: calc(400px + 4rem );
   max-width: var(--page-width);
   border-radius: 36px;
-  background-color: #2e375f;
+  background-color: #D475A5;
   &:hover{
     cursor: pointer;
     
