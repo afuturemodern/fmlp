@@ -1,15 +1,16 @@
-import styled from "styled-components";
-import Art from "./components/Art/Art.js";
-import Header from "./components/Header";
-import Mission from "./components/Mission";
-import Members from "./components/Members";
+import styled from 'styled-components';
+import Art from './components/Art/Art.js';
+import Header from './components/Header';
+import Mission from './components/Mission';
+import Members from './components/Members';
 
-import Intro from "./components/Intro";
+import Intro from './components/Intro';
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 const Main = styled.div`
   color: white;
+  background-color: red;
 `;
 
 // const Background = styled.div`

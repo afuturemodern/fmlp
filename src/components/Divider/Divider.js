@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import Ring from "./Ring";
-import Triangle from "./Triangle";
+import styled from 'styled-components';
+import Ring from './Ring';
+import Triangle from './Triangle';
 
 const DividerContainer = styled.span`
   width: fit-content;

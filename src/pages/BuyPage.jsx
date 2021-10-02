@@ -1,5 +1,9 @@
 import { useReducer } from 'react';
-import { BuyPageContext, buyPageReducer, initialBuyPageStore } from '../components/BuyPage/store'
+import {
+  BuyPageContext,
+  buyPageReducer,
+  initialBuyPageStore,
+} from '../components/BuyPage/store';
 import styled from 'styled-components';
 import PaymentButtons from '../components/BuyPage/PaymentButtons.jsx';
 import ChargeSummaryGrid from '../components/BuyPage/ChargeSummaryGrid.jsx';
@@ -9,17 +13,17 @@ import SoulfulOfNoise from '../images/SoufulOfNoise.jpeg';
 import PaymentSuccessfulMessage from '../components/BuyPage/PaymentSuccessfulMessage';
 import PaymentCanceledMessage from '../components/BuyPage/PaymentCanceledMessage';
 import PaymentErrorMessage from '../components/BuyPage/PaymentErrorMessage';
+import Divider from '../components/Divider/Divider';
 
 const BuyContainer = styled.div`
---page-width: 70vw;
---max-page-width: 1200px;
+  --page-width: 70vw;
+  --max-page-width: 1200px;
 `;
 
 const BuyHeader = styled(Heading)`
-width: var(--page-width);
-max-width: var(--max-page-width);
+  width: var(--page-width);
+  max-width: var(--max-page-width);
 `;
-
 
 const PaymentContainer = styled.div`
   display: flex;
@@ -35,15 +39,14 @@ const PaymentContainer = styled.div`
 
 const ImageWrapper = styled.div`
   padding: 2rem;
-  width: calc(400px + 4rem );
+  width: calc(400px + 4rem);
   max-width: var(--page-width);
   border-radius: 36px;
-  background-color: #D475A5;
-  &:hover{
+  background-color: #d475a5;
+  &:hover {
     cursor: pointer;
-    
   }
-  
+
   @media (max-width: 1200px) {
     margin-right: var(--space-medium);
   }
@@ -54,17 +57,23 @@ const ImageWrapper = styled.div`
   }
 `;
 
-
 const Image = ({ src, alt }) => {
-  return <img src={src} alt={alt} width={'400'} style={{maxWidth: "calc( 70vw - 4rem )"}}  onClick={() => window.open('https://soulfulofnoise.com')} />;
+  return (
+    <img
+      src={src}
+      alt={alt}
+      width={'400'}
+      style={{ maxWidth: 'calc( 70vw - 4rem )' }}
+      onClick={() => window.open('https://soulfulofnoise.com')}
+    />
+  );
 };
 
 function BuyPage() {
-
-  const [store, dispatch] = useReducer(buyPageReducer, initialBuyPageStore)
+  const [store, dispatch] = useReducer(buyPageReducer, initialBuyPageStore);
 
   return (
-    <BuyPageContext.Provider value={{store, dispatch}}>
+    <BuyPageContext.Provider value={{ store, dispatch }}>
       <BuyContainer>
         <BuyHeader>buy BU1DL tokens:</BuyHeader>
         {/* add amount and total compnent */}
@@ -74,11 +83,12 @@ function BuyPage() {
           </ImageWrapper>
           <ChargeSummaryGrid />
         </PaymentContainer>
-          <PaymentSuccessfulMessage />
-          <PaymentCanceledMessage />
-          <PaymentErrorMessage />
+        <PaymentSuccessfulMessage />
+        <PaymentCanceledMessage />
+        <PaymentErrorMessage />
         <PaymentButtons />
         <TermsDisclaimer />
+        <Divider />
       </BuyContainer>
     </BuyPageContext.Provider>
   );

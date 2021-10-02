@@ -25,7 +25,7 @@
 html {
   background: url("images/background_art.png");
   background-size: cover;
-  background-repeat: none;
+  background-repeat:repeat;
 }
 
 body {
@@ -42,6 +42,7 @@ html, body, #root {
 #root {
   display: flex;
   flex-direction: column;
+  
 }
 
 .hyperlinks {

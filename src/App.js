@@ -8,10 +8,12 @@ import HomePage from './pages/HomePage.js';
 import MissionPage from './pages/MissionPage.js';
 import MembersPage from './pages/MembersPage.js';
 import ProjectsPage from './pages/ProjectsPage.js';
+import TermsPage from './pages/TermsPage.js';
 import BuyPage from './pages/BuyPage';
 
 const Main = styled.main`
   flex-grow: 1;
+  background-color: #ffffff66;
 `;
 
 function App() {
@@ -34,6 +36,9 @@ function App() {
           </Route>
           <Route exact path="/buy">
             <BuyPage />
+          </Route>
+          <Route exact path="/terms">
+            <TermsPage />
           </Route>
         </Switch>
       </Main>
