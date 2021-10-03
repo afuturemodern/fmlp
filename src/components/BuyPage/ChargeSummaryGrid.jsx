@@ -2,6 +2,19 @@ import { useContext } from 'react';
 import styled from 'styled-components';
 import { BuyPageContext } from './store';
 
+const DesktopOnlySpan = styled.span`
+@media (max-width:600px) {
+  display: none;
+}
+`;
+
+const MobileOnlySpan = styled.span`
+display: none;
+@media (max-width:600px) {
+  display: inline;
+}
+`;
+
 const ChargeSummaryGridStyle = styled.div`
   flex-grow: 1;
   background-color: #356f49;
@@ -67,7 +80,7 @@ const ChargeSummaryGrid = () => {
     <ChargeSummaryGridStyle>
       <Grid>
         <GridItem>
-          <SubHeader>number of tokens</SubHeader>
+          <SubHeader><DesktopOnlySpan>number</DesktopOnlySpan><MobileOnlySpan>#</MobileOnlySpan> of tokens</SubHeader>
           <Dropdown
             name="amount"
             id="amount"
