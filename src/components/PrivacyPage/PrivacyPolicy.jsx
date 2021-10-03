@@ -48,14 +48,15 @@ function PrivacyPolicy() {
             &quot;us,&quot; or &quot;our&quot;). We are committed to protecting
             your personal information and your right to privacy. If you have any
             questions or concerns about this privacy notice or our practices
-            with regard to your personal information, please contact us at
-            afuturemodern@gmail.com. The purpose of this privacy notice is to
-            explain to you in the clearest way possible what information we
-            collect, how we use it, and what rights you have in relation to it.
-            If there are any terms in this privacy notice that you do not agree
-            with, please discontinue use of our Services immediately. Please
-            read this privacy notice carefully, as it will help you understand
-            what we do with the information that we collect.
+            with regard to your personal information, please contact us at{' '}
+            <a href="mailto:afuturemodern@gmail.com">afuturemodern@gmail.com</a>
+            .<br /> The purpose of this privacy notice is to explain to you in
+            the clearest way possible what information we collect, how we use
+            it, and what rights you have in relation to it. If there are any
+            terms in this privacy notice that you do not agree with, please
+            discontinue use of our Services immediately. Please read this
+            privacy notice carefully, as it will help you understand what we do
+            with the information that we collect.
           </Paragraph>
           <H1 id="9e072c39-e3b2-4502-b497-9413e8e803bb" class="">
             TABLE OF CONTENTS
@@ -166,6 +167,7 @@ function PrivacyPolicy() {
               HOW CAN YOU REVIEW, UPDATE OR DELETE THE DATA WE COLLECT FROM YOU?
             </LI>
           </OL>
+          <Divider />
           <H1 id="579c4015-7aca-4c78-a2f6-bcda96ab13b7" class="">
             1.WHAT INFORMATION DO WE COLLECT?
           </H1>
@@ -321,7 +323,9 @@ function PrivacyPolicy() {
             18 years of age has been collected, we will deactivate the account
             and take reasonable measures to promptly delete such data from our
             records. If you become aware of any data we may have collected from
-            children under age 18, please contact us at afuturemodern@gmail.com.
+            children under age 18, please contact us at{' '}
+            <a href="mailto:afuturemodern@gmail.com">afuturemodern@gmail.com</a>
+            .
           </Paragraph>
           <H1 id="e812eb5b-f0ff-4ee0-9eb1-11a9f14c7b05" class="">
             8. WHAT ARE YOUR PRIVACY RIGHTS?
