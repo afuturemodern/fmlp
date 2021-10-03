@@ -31,10 +31,10 @@ margin: 0 var(--space-small);
 `;
 const CardContainerStyle = styled.div`
 flex-grow: 1;
-margin: 0 var(--space-tiny);
+margin: 0 var(--space-small);
 
 @media (max-width: 600px) {
-  margin: var(--space-tiny) 0;
+  margin: var(--space-small) 0;
 }
 `;
 

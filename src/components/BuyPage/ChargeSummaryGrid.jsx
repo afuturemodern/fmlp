@@ -6,42 +6,42 @@ const ChargeSummaryGridStyle = styled.div`
   flex-grow: 1;
   background-color: #356f49;
   border-radius: 36px;
+  width: 50%;
+  margin: 0 var(--space-small);
+
+  @media (max-width: 900px) {
+    width:100%;
+    margin: 0;
+  }
 `;
 const Grid = styled.div`
   display: flex;
   justify-content: space-around;
-  margin-top: 5vh;
   color: #fefefe;
-  /* background-color: #fefefe66; */
   padding: 20px;
+  height: 100%;
+  align-items: center;
 
-  @media (max-width: 1200px) {
-    flex-direction: column;
+  @media (max-width: 900px) {
+    min-height: calc( ( var( --page-width ) - 2rem ) * .457  );
   }
 `;
 const GridItem = styled.div`
-  padding: 20px 0;
-  /* border-left: solid 2px #fefefe55;
-  border-right: solid 2px #fefefe55; */
-  @media (max-width: 1200px) {
-    margin-bottom: var(--space-medium);
-  }
 `;
 const Span = styled.span`
   font-size: 1.2rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
+  line-height: 1.8rem;
 `;
 
 const SubHeader = styled.h2`
-  margin-bottom: 50px;
-  padding: 2px 30px;
+  margin-bottom: 20px;
 `;
 
 const DropdownStyle = styled.select`
   padding: 0.1rem 1rem;
   border-radius: 36px;
   font-size: 1.2rem;
-  margin-left: 3rem;
 `;
 
 const Dropdown = ({ name, id, list, onChange }) => {

@@ -39,30 +39,30 @@ const PaymentContainer = styled.div`
 
 const ImageWrapper = styled.div`
   padding: 2rem;
-  /* width: calc(400px + 4rem); */
-  /* max-width: var(--page-width); */
   border-radius: 36px;
   background-color: #d475a5;
+  width: 50%;
+  margin: 0 var(--space-small);
   &:hover {
     cursor: pointer;
   }
-
-  @media (max-width: 1200px) {
-    margin-right: var(--space-medium);
-  }
-
   @media (max-width: 900px) {
-    margin-right: 0;
-    margin-bottom: var(--space-medium);
+    width:100%;
+    margin: 0 0 var(--space-medium);
   }
 `;
+
+const BuyImgStyle = {
+  width: '100%'
+};
+
 
 const Image = ({ src, alt }) => {
   return (
     <img
       src={src}
       alt={alt}
-      width={'440'}
+      style={BuyImgStyle}
       // style={{ maxWidth: 'calc( 70vw - 4rem )' }}
       onClick={() => window.open('https://soulfulofnoise.com')}
     />
