@@ -17,6 +17,5 @@ body {
   font-family: "AbelPro", Arial, Helvetica, sans-serif;
   /* font-family: "Abel", Arial, Helvetica, sans-serif; */
   font-weight: lighter;
-  background-image: linear-gradient(to right, #aabafb, #f7d4ed);
-  background-blend-mode:lighten;
+  background-image: linear-gradient(to right, #aabafb, #f7d4ed) ;
 }

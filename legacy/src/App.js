@@ -10,7 +10,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 const Main = styled.div`
   color: white;
-  background-color: red;
 `;
 
 // const Background = styled.div`

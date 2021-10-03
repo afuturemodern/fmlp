@@ -19,6 +19,7 @@ function ProjectsPage() {
       <Aeria />
       <Divider />
       <Estate />
+      <Divider />
     </Container>
   );
 }

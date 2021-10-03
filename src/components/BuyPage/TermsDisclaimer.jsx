@@ -13,7 +13,11 @@ const TermsDisclaimer = () => {
       <StyledParagraph>
         By making a transaction you are agreeing to our{' '}
         <a target="_blank" rel="noreferrer" href="/terms">
-          Terms and Conditions{' '}
+          terms and conditions
+        </a>{' '}
+        |{' '}
+        <a target="_blank" rel="noreferrer" href="/privacy">
+          privacy policy
         </a>
       </StyledParagraph>
     </>

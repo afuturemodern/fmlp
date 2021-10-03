@@ -40,10 +40,8 @@ function TermsOfService() {
     <TextContainer>
       <article id="0b15798f-eed5-48ae-9cda-292dfc9e4ea5" className="page sans">
         <header>
-          <div className="page-header-icon undefined">
-            <span className="icon">📏</span>
-          </div>
-          <H1 className="page-title">terms and conditions</H1>
+          <div className="page-header-icon undefined"></div>
+          <H1 className="page-title">Terms and Conditions</H1>
         </header>
         <div className="page-body">
           <Paragraph id="642378e9-aa3f-4d2e-8444-f4140a502ea5">
@@ -908,6 +906,7 @@ function TermsOfService() {
           <Paragraph id="4a68493a-4fb5-4344-bcba-7c0eb8813877"></Paragraph>
         </div>
       </article>
+      <Divider />
     </TextContainer>
   );
 }

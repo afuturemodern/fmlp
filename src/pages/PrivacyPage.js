@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-
-import TermsOfService from '../components/TermsPage/TermsOfService.jsx';
+import PrivacyPolicy from '../components/PrivacyPage/PrivacyPolicy.jsx';
 
 const Container = styled.div`
   display: flex;
@@ -9,12 +8,12 @@ const Container = styled.div`
   /* background-color: #ffffffaa; */
 `;
 
-function TermsPage() {
+function PrivacyPage() {
   return (
     <Container>
-      <TermsOfService />
+      <PrivacyPolicy />
     </Container>
   );
 }
 
-export default TermsPage;
+export default PrivacyPage;

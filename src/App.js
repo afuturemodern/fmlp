@@ -10,10 +10,11 @@ import MembersPage from './pages/MembersPage.js';
 import ProjectsPage from './pages/ProjectsPage.js';
 import TermsPage from './pages/TermsPage.js';
 import BuyPage from './pages/BuyPage';
+import PrivacyPage from './pages/PrivacyPage.js';
 
 const Main = styled.main`
   flex-grow: 1;
-  background-color: #ffffff66;
+  background-color: #ffffff77;
 `;
 
 function App() {
@@ -39,6 +40,9 @@ function App() {
           </Route>
           <Route exact path="/terms">
             <TermsPage />
+          </Route>
+          <Route exact path="/privacy">
+            <PrivacyPage />
           </Route>
         </Switch>
       </Main>
