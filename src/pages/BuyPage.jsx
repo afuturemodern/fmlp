@@ -39,8 +39,8 @@ const PaymentContainer = styled.div`
 
 const ImageWrapper = styled.div`
   padding: 2rem;
-  width: calc(400px + 4rem);
-  max-width: var(--page-width);
+  /* width: calc(400px + 4rem); */
+  /* max-width: var(--page-width); */
   border-radius: 36px;
   background-color: #d475a5;
   &:hover {
@@ -62,8 +62,8 @@ const Image = ({ src, alt }) => {
     <img
       src={src}
       alt={alt}
-      width={'400'}
-      style={{ maxWidth: 'calc( 70vw - 4rem )' }}
+      width={'440'}
+      // style={{ maxWidth: 'calc( 70vw - 4rem )' }}
       onClick={() => window.open('https://soulfulofnoise.com')}
     />
   );
