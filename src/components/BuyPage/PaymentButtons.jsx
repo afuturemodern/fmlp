@@ -26,7 +26,7 @@ const PaypalContainerStyle = styled.div`
 flex-grow:1;
 margin: 0 var(--space-small);
 @media (max-width: 600px) {
-  margin: var(--space-small) 0;
+  margin: 0 0 var(--space-small);
 }
 `;
 const CardContainerStyle = styled.div`
@@ -34,7 +34,7 @@ flex-grow: 1;
 margin: 0 var(--space-small);
 
 @media (max-width: 600px) {
-  margin: var(--space-small) 0;
+  margin: 0;
 }
 `;
 
@@ -48,7 +48,7 @@ const Container = styled.div`
 
   @media (max-width: 600px) {
     flex-direction: column;
-    margin: 1rem auto;
+    margin: var(--space-medium) auto 0;
   }
 `;
 
