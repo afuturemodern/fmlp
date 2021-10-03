@@ -32,6 +32,7 @@ const Span = styled.span`
   font-size: 1.2rem;
   margin-left: 1rem;
   line-height: 1.8rem;
+  display: inline-block;
 `;
 
 const SubHeader = styled.h2`
