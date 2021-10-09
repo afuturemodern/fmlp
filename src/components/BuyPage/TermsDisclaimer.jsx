@@ -11,7 +11,7 @@ const TermsDisclaimer = () => {
   return (
     <>
       <StyledParagraph>
-        By making a transaction you are agreeing to our{' '}
+        by making a transaction you are agreeing to our{' '}
         <a target="_blank" rel="noreferrer" href="/terms">
           terms and conditions
         </a>{' '}
