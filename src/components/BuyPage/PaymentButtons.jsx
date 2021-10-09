@@ -17,25 +17,25 @@ const card_button_style = {
 };
 
 const paypal_options = {
-  'client-id': 'AWdHpI51fVvKquVN3KDB6wi-S_ad7Hm-eElY6tAJbCwlSDKoW7tOtZI1q8z8wW7isA_AuRimSoimd-12',
+  'client-id': process.env.REACT_APP_PAYPAL_LIVE_CLIENT_ID,
   currency: 'USD',
   intent: 'capture',
 };
 
 const PaypalContainerStyle = styled.div`
-flex-grow:1;
-margin: 0 var(--space-small);
-@media (max-width: 600px) {
-  margin: 0 0 var(--space-small);
-}
+  flex-grow: 1;
+  margin: 0 var(--space-small);
+  @media (max-width: 600px) {
+    margin: 0 0 var(--space-small);
+  }
 `;
 const CardContainerStyle = styled.div`
-flex-grow: 1;
-margin: 0 var(--space-small);
+  flex-grow: 1;
+  margin: 0 var(--space-small);
 
-@media (max-width: 600px) {
-  margin: 0;
-}
+  @media (max-width: 600px) {
+    margin: 0;
+  }
 `;
 
 const Container = styled.div`
@@ -52,32 +52,27 @@ const Container = styled.div`
   }
 `;
 
-
 //function that does somethiing after successful transaction
 
 const PaymentButtons = () => {
-  const {dispatch} = useContext(BuyPageContext);
-  
+  const { dispatch, store } = useContext(BuyPageContext);
+
   const handleApprove = () => {
-    dispatch({type: 'updateIsPaymentSuccessful'})
-  }
+    dispatch({ type: 'updateIsPaymentSuccessful' });
+  };
   const handleCancel = () => {
-    dispatch({type: 'updateIsPaymentCanceled'})
-  }
+    dispatch({ type: 'updateIsPaymentCanceled' });
+  };
   const handleError = () => {
-    dispatch({type: 'updateIsPaymentError'})
-  }
-  
-  
-  const handleCreateOrder = (data, actions) => actions.order.create({
-    purchase_units: [
-      { amount: {value: '0.01'}}
-    ],
-  })
+    dispatch({ type: 'updateIsPaymentError' });
+  };
+
+  const handleCreateOrder = (data, actions) =>
+    actions.order.create({
+      purchase_units: [{ amount: { value: store.price } }],
+    });
 
   return (
-
-    
     <Container>
       <PayPalScriptProvider options={paypal_options}>
         <PaypalContainerStyle>
@@ -101,7 +96,6 @@ const PaymentButtons = () => {
         </CardContainerStyle>
       </PayPalScriptProvider>
     </Container>
-    
   );
 };
 

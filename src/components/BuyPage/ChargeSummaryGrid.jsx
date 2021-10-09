@@ -3,16 +3,16 @@ import styled from 'styled-components';
 import { BuyPageContext } from './store';
 
 const DesktopOnlySpan = styled.span`
-@media (max-width:600px) {
-  display: none;
-}
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
 
 const MobileOnlySpan = styled.span`
-display: none;
-@media (max-width:600px) {
-  display: inline;
-}
+  display: none;
+  @media (max-width: 600px) {
+    display: inline;
+  }
 `;
 
 const ChargeSummaryGridStyle = styled.div`
@@ -23,7 +23,7 @@ const ChargeSummaryGridStyle = styled.div`
   margin: 0 var(--space-small);
 
   @media (max-width: 900px) {
-    width:100%;
+    width: 100%;
     margin: 0;
   }
 `;
@@ -36,11 +36,10 @@ const Grid = styled.div`
   align-items: center;
 
   @media (max-width: 900px) {
-    min-height: calc( ( var( --page-width ) - 2rem ) * .457  );
+    min-height: calc((var(--page-width) - 2rem) * 0.457);
   }
 `;
-const GridItem = styled.div`
-`;
+const GridItem = styled.div``;
 const Span = styled.span`
   font-size: 1.2rem;
   margin-left: 1rem;
@@ -80,7 +79,10 @@ const ChargeSummaryGrid = () => {
     <ChargeSummaryGridStyle>
       <Grid>
         <GridItem>
-          <SubHeader><DesktopOnlySpan>number</DesktopOnlySpan><MobileOnlySpan>#</MobileOnlySpan> of tokens</SubHeader>
+          <SubHeader>
+            <DesktopOnlySpan>number</DesktopOnlySpan>
+            <MobileOnlySpan>#</MobileOnlySpan> of tokens
+          </SubHeader>
           <Dropdown
             name="amount"
             id="amount"

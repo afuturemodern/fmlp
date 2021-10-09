@@ -1,9 +1,8 @@
 import React from 'react';
 
 export const initialBuyPageStore = {
-  price: 50,
-  // amountOptions: [50, 69],
-  amountOptions: [50],
+  price: 69,
+  amountOptions: [69, 50],
   isPaymentSuccessful: false,
   isPaymentCanceled: false,
   isPaymentError: false,
