@@ -7,15 +7,16 @@ function Aeria() {
     <TextContainer>
       <Heading>aeria</Heading>
       <Paragraph>
-      aeria is an interactive map of the social web that helps complementary communities efficiently discover each other. 
-      it reimagines search in virtual space, where creators connect dots, innovate, and chart their own pathways to success in the future of art. 
-
+        aeria is an interactive map of the social web that helps complementary
+        communities efficiently discover each other. it reimagines search in
+        virtual space, where creators connect dots, innovate, and chart their
+        own pathways to success in the future of art.
       </Paragraph>
- 
-     
+
       <Paragraph>
-      our goal is to supercharge every artist's decision making with human led machine intelligence, 
-      enabling anyone to find and execute on creative opportunities at scale on their own terms.
+        our goal is to supercharge every artist's decision making with human led
+        machine intelligence, enabling anyone to find and execute on creative
+        opportunities at scale on their own terms.
       </Paragraph>
       <Paragraph>follow our progress or contribute:</Paragraph>
       <Paragraph>
@@ -25,23 +26,18 @@ function Aeria() {
       </Paragraph>
       <Paragraph>
         <a
-          href={`https://www.figma.com/file/Jjs28AXfVtQogC73oCRsG2/future-modern-(Copy)?node-id=173%3A31`}
+          href={`https://github.com/afuturemodern/aeriaWebsite`}
           className="hyperlinks"
         >
           demo web app
         </a>
         <br />
-        <a
-          href="https://github.com/afuturemodern/aeriaWebsite"
-          className="hyperlinks"
-        >
+        <a href="https://github.com/afuturemodern/aeria" className="hyperlinks">
           social network analysis research
         </a>
         <br />
         <a
-          href={
-            'https://www.figma.com/exit?url=https%3A%2F%2Fgithub.com%2Fafuturemodern%2FaudioAnalysis&fuid=876231781300439862'
-          }
+          href={'https://github.com/afuturemodern/audioAnalysis'}
           className="hyperlinks"
         >
           audio analysis research
@@ -50,7 +46,7 @@ function Aeria() {
       <Paragraph>
         <a
           href={
-            'https://www.figma.com/file/Jjs28AXfVtQogC73oCRsG2/future-modern-(Copy)?node-id=173%3A31'
+            'https://www.notion.so/aeria-human-led-ai-music-discovery-ed3b767d32f2468a9693695f5c396c00'
           }
           className="hyperlinks"
         >
