@@ -42,7 +42,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://afuturemodern.github.io/",
+  "homepage": "https://afuturemodern.github.io/fmlp/",
   "devDependencies": {
     "dotenv": "^8.2.0",
     "gh-pages": "^4.0.0"
