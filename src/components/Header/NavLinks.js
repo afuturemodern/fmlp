@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 const NavList = styled.ul`
   list-style: none;
@@ -25,9 +25,9 @@ const NavItem = styled.li`
 const NavLinks = () => {
   return (
     <NavList>
-      {['mission', 'members', 'projects'].map((i) => (
+      {["mission", "members", "projects"].map((i) => (
         <NavItem key={i}>
-          <NavLink to={`/${i}`} activeClassName="selected">
+          <NavLink to={`/fmlp/${i}`} activeClassName="selected">
             {i}
           </NavLink>
         </NavItem>
