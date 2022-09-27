@@ -59,7 +59,7 @@ const Header = () => {
       <NavList>
         {["mission", "members", "projects"].map((i) => (
           <NavItem key={i}>
-            <NavLink to={`/${i}`} activeClassName="selected">
+            <NavLink to={`/fmlp/${i}`} activeClassName="selected">
               {i}
             </NavLink>
           </NavItem>
