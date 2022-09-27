@@ -16,7 +16,7 @@ const LogoContainer = styled(Link)`
 
 const Logo = () => {
   return (
-    <LogoContainer to="/">
+    <LogoContainer to="/fmlp/">
       <TurtleLogo src={turtleLogo} />
       <TextLogo src={textLogo} />
     </LogoContainer>
