@@ -1,10 +1,10 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import Intro from '../components/HomePage/Intro/Intro.js';
-import Divider from '../components/Divider/Divider.js';
-import HomeCards from '../components/HomePage/HomeCards/HomeCards.js';
-import H1 from '../components/shared/H1';
-import { PartnersGrid } from '../components/HomePage/PartnersGrid/PartnersGrid.jsx';
+import Intro from "../components/HomePage/Intro/Intro.js";
+import Divider from "../components/Divider/Divider.js";
+import HomeCards from "../components/HomePage/HomeCards/HomeCards.js";
+import H1 from "../components/shared/H1";
+import { PartnersGrid } from "../components/HomePage/PartnersGrid/PartnersGrid.jsx";
 
 const HomePageContainer = styled.div`
   display: flex;

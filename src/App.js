@@ -1,16 +1,16 @@
-import styled from 'styled-components';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import styled from "styled-components";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Header from './components/Header/Header.js';
-import Footer from './components/shared/Footer.js';
+import Header from "./components/Header/Header.js";
+import Footer from "./components/shared/Footer.js";
 
-import HomePage from './pages/HomePage.js';
-import MissionPage from './pages/MissionPage.js';
-import MembersPage from './pages/MembersPage.js';
-import ProjectsPage from './pages/ProjectsPage.js';
-import TermsPage from './pages/TermsPage.js';
-import BuyPage from './pages/BuyPage';
-import PrivacyPage from './pages/PrivacyPage.js';
+import HomePage from "./pages/HomePage.js";
+import MissionPage from "./pages/MissionPage.js";
+import MembersPage from "./pages/MembersPage.js";
+import ProjectsPage from "./pages/ProjectsPage.js";
+import TermsPage from "./pages/TermsPage.js";
+import BuyPage from "./pages/BuyPage";
+import PrivacyPage from "./pages/PrivacyPage.js";
 
 const Main = styled.main`
   flex-grow: 1;
@@ -23,25 +23,25 @@ function App() {
       <Header />
       <Main>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/fmlp">
             <HomePage />
           </Route>
-          <Route exact path="/mission">
+          <Route exact path="/fmlp/mission">
             <MissionPage />
           </Route>
-          <Route exact path="/members">
+          <Route exact path="/fmlp/members">
             <MembersPage />
           </Route>
-          <Route exact path="/projects">
+          <Route exact path="/fmlp/projects">
             <ProjectsPage />
           </Route>
-          <Route exact path="/buy">
+          <Route exact path="/fmlp/buy">
             <BuyPage />
           </Route>
-          <Route exact path="/terms">
+          <Route exact path="/fmlp/terms">
             <TermsPage />
           </Route>
-          <Route exact path="/privacy">
+          <Route exact path="/fmlp/privacy">
             <PrivacyPage />
           </Route>
         </Switch>
